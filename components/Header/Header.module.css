@@ -1,0 +1,66 @@
+.HeaderBox {
+    width: 100%;
+    min-height: 4.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1015 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: none !important;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonsPart {
+    display: flex;
+}
+
+.menuSide {
+    display: flex;
+}
+
+.HeaderLogo {
+    width: 10rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.drawerHeaderBtn {
+    color: #000;
+}
+
+.drawerBodyBtn {
+    position: fixed;
+    top: 9rem;
+    left: 4rem;
+    background: #00c0c3 !important;
+    min-width: 2.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 5rem;
+    color: #fff;
+    transition: left .3s, top .1s;
+}
+
+@media (max-width: 768px) {
+    .headerMenuParent {
+        display: none;
+    }
+
+    .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .buttonsPart, .menuSide{
+        display: none;
+    }
+}

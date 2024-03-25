@@ -1,0 +1,162 @@
+.FooterDiv {
+    height: 100%;
+    min-height: 18rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    padding: 3rem 1rem;
+}
+
+.bodyFooterDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent_LogoIslamicSourcesFooter {
+    width: 14rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto auto 1.5rem;
+}
+
+.captionFooterLogo {
+    color: #9a9a9a;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.titleSocialMediaBox {
+    color: #16c3c7;
+    font-weight: 700;
+    font-size: 1.1rem !important;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+.socialMediaBoxRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-x: auto;
+    max-width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.socialMediaBoxCol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+
+.bgIconClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .5rem 1rem 0;
+    width: 4rem !important;
+    height: 4rem;
+}
+
+.bgIconClass svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: #fff;
+}
+
+.bgIconClassBoxRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .5rem 1rem 0;
+    width: 4rem !important;
+    height: 2rem;
+}
+
+.bgIconClassBoxRow svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: #fff;
+}
+
+.TemplateOwnershipText {
+    text-align: center;
+    font-size: 14px;
+}
+
+.lastCellBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scrollbarsFooter {
+    height: 100% !important;
+    color: #6e6e6e;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+[dir="ltr"] .scrollbarsFooter > div:first-of-type div {
+    padding-right: .8rem;
+}
+
+[dir="rtl"] .scrollbarsFooter > div:first-of-type div {
+    padding-left: .8rem;
+}
+
+.formBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.formBox .MuiFormControl-root {
+    margin-right: 1rem;
+}
+
+.emailInput {
+    margin-right: 1.5rem;
+}
+
+.emailInput label {
+    letter-spacing: 0;
+}
+
+[dir="rtl"] .emailInput {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+
+.emailInput input {
+    letter-spacing: 0;
+}
+
+@media (max-width: 992px) {
+    .bodyFooterDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    .scrollbarsFooterSocialMedia {
+        height: 5rem !important;
+    }
+
+    .scrollbarsFooter {
+        height: 10rem !important;
+    }
+
+    .formBox {
+        justify-content: center;
+    }
+}

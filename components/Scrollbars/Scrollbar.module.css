@@ -1,0 +1,31 @@
+[dir="rtl"] .scrollbar > div:first-of-type {
+    margin-right: 0 !important;
+    margin-left: -17px;
+    padding-left: 10px;
+}
+
+[dir="ltr"] .scrollbar > div:first-of-type {
+    padding-right: 10px;
+}
+
+[dir="rtl"] .scrollbar > div:last-of-type {
+    left: 2px;
+    right: initial!important;
+    position: relative;
+}
+
+.scrollbar > div:last-of-type:before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: #0c0c0c20;
+    top: 0;
+    left: calc(50% - 1px);
+    border-radius: 3px;
+}
+
+.scrollbar > div:last-of-type div {
+    background-color: #999!important;
+}
+

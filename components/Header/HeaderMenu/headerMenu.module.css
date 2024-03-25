@@ -1,0 +1,16 @@
+.LinkDiv {
+    max-width: fit-content;
+}
+
+.itemHeader {
+    display: block;
+    color: #979797 !important;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 13px;
+}
+
+.itemHeader:hover, .activeItemHeader {
+    color: #000000 !important;
+    background: none !important;
+}

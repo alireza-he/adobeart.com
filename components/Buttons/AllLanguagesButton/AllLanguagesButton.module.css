@@ -1,0 +1,18 @@
+.buttonBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: .35rem;
+}
+
+.title {
+    font-size: 0.85rem !important;
+    white-space: nowrap;
+    color: #fff;
+    margin-bottom: -.5rem;
+}
+
+.arrowIcon {
+    width: 12px;
+}

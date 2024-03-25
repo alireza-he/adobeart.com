@@ -1,0 +1,14 @@
+.parentImage{
+    width: 30vw;
+    margin: auto;
+}
+
+.textBox {
+    margin: 3vw 0;
+}
+
+.content {
+    line-height: 1.75rem;
+    font-size: 14px;
+    text-align: justify;
+}
