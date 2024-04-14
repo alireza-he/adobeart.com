@@ -1,7 +1,4 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import styles from "./Header.module.css";
 import LogoSiteHeader from "./LogoSiteHeader";
 import {useDesktop, useMobile} from "../Demensions";
 import HeaderMenu from "./HeaderMenu";
@@ -10,13 +7,16 @@ import CartButton from "../Buttons/CartButton";
 import AllLanguagesButton from "../Buttons/AllLanguagesButton/AllLanguagesButton";
 import SearchButton from "../Buttons/SearchButton";
 import HeaderResponsiveMenu from "../Header/HeaderResponsiveMenu";
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import styles from "./Header.module.css";
 
 const Header = () => {
     const mobile = useMobile();
     const desktop = useDesktop();
 
     return (
-        <AppBar position="fixed" className={styles.HeaderBox}>
+        <AppBar className={styles.HeaderBox}>
             <div className="container">
                 <Toolbar className={styles.toolbar}>
                     <div className={styles.buttonsPart}>
