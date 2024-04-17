@@ -33,6 +33,8 @@
 .sendButton {
     width: 40%;
     margin-left: 1rem;
+    background: #d90b0b;
+    border-radius: .5rem;
 }
 
 [dir="rtl"] .sendButton {

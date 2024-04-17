@@ -6,7 +6,7 @@ const LogoSiteHeader = () => {
     return (
         <Link href="/" style={{width: "fit-content"}}>
             <img
-                src="/assets/logoHeader.jpg"
+                src="/assets/AdobeArtsLogo.png"
                 alt="islamic sources logo"
                 className={styles.HeaderLogo}
             />

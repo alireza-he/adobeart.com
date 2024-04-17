@@ -1,6 +1,7 @@
 import React from "react"
 import {Inter} from "next/font/google";
 import BannerTop from "/components/BannerTop"
+import Pages from "/components/Pages"
 
 // const inter = Inter({ subsets: ["latin"] });
 //
@@ -14,6 +15,8 @@ const Home = () => {
     return (
         <>
             <BannerTop/>
+
+            <Pages/>
         </>
     )
 }

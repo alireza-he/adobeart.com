@@ -1,0 +1,29 @@
+.wrapper {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+}
+
+.items a{
+    margin: 0 .5rem;
+}
+
+.item {
+    background: #F0F0F0;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    .wrapper{
+        flex-direction: column;
+    }
+}

@@ -1,20 +1,16 @@
 import React from 'react';
-import dynamic from "next/dynamic";
-import IconButton from "@mui/material/IconButton";
-import Link from "next/link";
-
-const DynamicSearchIcon = dynamic(() => import('@mui/icons-material/Search'), {ssr: false})
+import Image from "next/image";
+import styles from "./Buttons.module.css";
 
 const SearchButton = () => {
     return (
-        <Link href="/search" style={{maxWidth:"fit-content"}}>
-            <IconButton
-                size="large"
-                color="inherit"
-            >
-                <DynamicSearchIcon className="fillPathBlack"/>
-            </IconButton>
-        </Link>
+        <button className={styles.mx_btn}>
+            <Image src={"/assets/search.svg"}
+                   alt={"login"}
+                   width={15}
+                   height={15}
+            />
+        </button>
     );
 };
 

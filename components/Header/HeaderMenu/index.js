@@ -34,7 +34,7 @@ const HeaderMenu = () => {
         },
         {
             "title": "درباره ما",
-            "route":"aboutUs"
+            "route":"about"
         },
     ]
 

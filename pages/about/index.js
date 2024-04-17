@@ -1,12 +1,15 @@
 import React from 'react';
 import AboutUs from "../../components/AboutAndContactUs/AboutUs";
 import ContactUs from "../../components/AboutAndContactUs/ContactUs";
+import BannerTop from "/components/BannerTop";
 // import {getRequest} from "functions/api";
 
 const About = ({data}) => {
     return (
         <>
-            <AboutUs data={data}/>
+            <BannerTop/>
+
+            <AboutUs/>
 
             <ContactUs/>
         </>

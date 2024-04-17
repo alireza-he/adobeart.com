@@ -2,16 +2,13 @@ import React, {useState} from 'react';
 import Grid from "@mui/material/Grid";
 import Fab from "@mui/material/Fab";
 import CircularProgress from "@mui/material/CircularProgress";
-import {useTranslator} from "translator";
-import {useNotification} from "notify";
-import {postRequest} from "functions/api";
-import FormInput from "CPT/FormInput";
+import FormInput from "/components/FormInput";
 import styles from "./ContactUs.module.css";
+import Button from "@mui/material/Button";
 
 let refs = {};
 const ContactUs = () => {
-    const {__} = useTranslator();
-    const {notify, errorNotify} = useNotification();
+    // const {notify, errorNotify} = useNotification();
     const [formData, setForm] = useState({});
     const [loading, setLoading] = useState(false);
 
@@ -20,31 +17,31 @@ const ContactUs = () => {
     }
 
     const submitForm = event => {
-        event?.preventDefault();
-        formData.type = "opinion";
-        formData.title = formData.firstName + " " + formData.lastName;
-        if(!formData.firstName)
-            return errorNotify(__("First Name is required"));
-        if(!formData.lastName)
-            return errorNotify(__("Last Name is required"));
-        if(!formData.content)
-            return errorNotify(__("Your message is empty"));
-        setLoading(true);
-        postRequest('posts/submission', formData)
-            .then(res => {
-                if (res.data.status === 200) {
-                    notify(__("Your journal submitted successfully"))
-                    setForm({});
-                    Object.values(refs).forEach(ref => ref.setValue(''))
-                }
-                else if (res.data.message)
-                    errorNotify(res.data.message)
-                setLoading(false);
-            })
+    //     event?.preventDefault();
+    //     formData.type = "opinion";
+    //     formData.title = formData.firstName + " " + formData.lastName;
+    //     if(!formData.firstName)
+    //         return errorNotify("First Name is required");
+    //     if(!formData.lastName)
+    //         return errorNotify("Last Name is required");
+    //     if(!formData.content)
+    //         return errorNotify("Your message is empty");
+    //     setLoading(true);
+    //     postRequest('posts/submission', formData)
+    //         .then(res => {
+    //             if (res.data.status === 200) {
+    //                 notify(__("Your journal submitted successfully"))
+    //                 setForm({});
+    //                 Object.values(refs).forEach(ref => ref.setValue(''))
+    //             }
+    //             else if (res.data.message)
+    //                 errorNotify(res.data.message)
+    //             setLoading(false);
+    //         })
     }
 
     return (
-        <form onSubmit={submitForm}>
+        <form onSubmit={submitForm} className={"container"} style={{margin:"1.5rem 0"}}>
             <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                     <FormInput
@@ -84,14 +81,14 @@ const ContactUs = () => {
                             onChange={handleInput}
                         />
 
-                        <Fab type="submit" className={styles.sendButton} size="large">
-                            {
-                                loading ?
-                                    <CircularProgress color="inherit" size={30}/>
-                                    :
-                                    __("Send")
-                            }
-                        </Fab>
+                        <Button type="submit" className={styles.sendButton} size="large">
+                            {/*{*/}
+                            {/*    loading ?*/}
+                            {/*         <CircularProgress color="inherit" size={30}/>*/}
+                            {/*         :*/}
+                                    Send
+                            {/*}*/}
+                        </Button>
                     </div>
                 </Grid>
 
