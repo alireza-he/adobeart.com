@@ -14,7 +14,7 @@ import Pages from "/components/Pages"
 const Home = () => {
     return (
         <>
-            <BannerTop/>
+            <BannerTop src={"/assets/banners/main.jpg"}/>
 
             <Pages/>
         </>

@@ -17,7 +17,7 @@ const About = ({data}) => {
 };
 
 // export const getServerSideProps = async () => {
-//     const data = await getRequest('about')
+//     const data = await getRequest('About')
 //         .then(res => res.data.status === 200 ? res.data.data : {});
 //
 //     return {

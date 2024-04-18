@@ -1,15 +1,14 @@
 import React from 'react';
-import BannerTop from "/components/BannerTop"
+import BannerTop from "/components/BannerTop";
+import Pages from "/components/Pages";
 
 const AiPage = () => {
     return (
-        <div>
-            <BannerTop/>
+        <>
+            <BannerTop src={"/assets/banners/Ai.jpg"}/>
 
-            <h1>
-                This is AiPage
-            </h1>
-        </div>
+            <Pages/>
+        </>
     );
 };
 

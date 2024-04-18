@@ -5,7 +5,7 @@ import styles from "./Buttons.module.css";
 const UserButton = () => {
     return (
         <button className={styles.mx_btn}>
-            <Image src={"/assets/login.svg"}
+            <Image src={"/assets/headerIcons/login.svg"}
                    alt={"login"}
                    width={15}
                    height={15}

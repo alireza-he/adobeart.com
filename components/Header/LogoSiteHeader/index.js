@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from "next/link";
-import styles from "../Header.module.css";
+import Image from "next/image";
 
 const LogoSiteHeader = () => {
     return (
-        <Link href="/" style={{width: "fit-content"}}>
-            <img
-                src="/assets/AdobeArtsLogo.png"
-                alt="islamic sources logo"
-                className={styles.HeaderLogo}
+        <Link href="/">
+            <Image src={"/assets/AdobeArtsLogo.png"}
+                   alt={"AdobeArts"}
+                   width={175}
+                   height={175}
             />
         </Link>
     );

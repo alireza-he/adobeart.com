@@ -13,39 +13,39 @@ const Carousel = () => {
 
     const data = [
         {
-            src: "/assets/slide_1.jpg",
+            src: "/assets/main.jpg",
             alt: "picture 1"
         },
         {
-            src: "/assets/slide_2.jpg",
+            src: "/assets/Ai.jpg",
             alt: "picture 2"
         },
         {
-            src: "/assets/slide_3.jpg",
+            src: "/assets/Id.jpg",
             alt: "picture 3"
         },
         {
-            src: "/assets/slide_4.jpg",
+            src: "/assets/Dw.jpg",
             alt: "picture 4"
         },
         {
-            src: "/assets/slide_5.jpg",
+            src: "/assets/Ps.jpg",
             alt: "picture 5"
         },
         {
-            src: "/assets/slide_6.jpg",
+            src: "/assets/Lr.jpg",
             alt: "picture 6"
         },
         {
-            src: "/assets/slide_7.jpg",
+            src: "/assets/Pr.jpg",
             alt: "picture 7"
         },
         {
-            src: "/assets/slide_8.jpg",
+            src: "/assets/An.jpg",
             alt: "picture 8"
         },
         {
-            src: "/assets/slide_9.jpg",
+            src: "/assets/Ae.jpg",
             alt: "picture 9"
         },
     ]

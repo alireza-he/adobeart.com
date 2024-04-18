@@ -1,9 +1,9 @@
 import React from "react";
 import {useRouter} from "next/router";
+import Link from "next/link";
 import classNames from "classnames";
 import Button from "@mui/material/Button";
 import styles from "./headerMenu.module.css"
-import Link from "next/link";
 
 const HeaderMenu = () => {
     const router = useRouter();
@@ -14,29 +14,31 @@ const HeaderMenu = () => {
         },
         {
             "title": "آموزش",
-            "route":"training"
+            "route":"/Education"
         },
         {
             "title": "نمونه کار",
-            "route":"portfolio"
+            "route":"/Portfolio"
         },
         {
             "title": "سفارش",
-            "route":"order"
+            "route":"/Orders"
         },
         {
             "title": "تعرفه قیمت",
-            "route":"price"
+            "route":"/Price"
         },
         {
             "title": "پشتیبانی",
-            "route":"support"
+            "route":"/Support"
         },
         {
             "title": "درباره ما",
-            "route":"about"
+            "route":"/About"
         },
     ]
+
+    console.log(router.pathname, "header")
 
     return (
         <>

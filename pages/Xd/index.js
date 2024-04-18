@@ -1,15 +1,14 @@
 import React from 'react';
 import BannerTop from "/components/BannerTop";
+import Pages from "/components/pages";
 
 const XdPage = () => {
     return (
-        <div>
-            <BannerTop/>
+        <>
+            <BannerTop src={"/assets/banners/Xd.jpg"}/>
 
-            <h1>
-                This is XdPage
-            </h1>
-        </div>
+            <Pages/>
+        </>
     );
 };
 

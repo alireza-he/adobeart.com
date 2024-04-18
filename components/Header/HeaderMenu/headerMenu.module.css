@@ -8,9 +8,10 @@
     white-space: nowrap;
     margin: 0;
     font-size: 13px;
+    font-weight: bold;
 }
 
 .itemHeader:hover, .activeItemHeader {
-    color: #000000 !important;
+    color: #ff000f !important;
     background: none !important;
 }

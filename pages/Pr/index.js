@@ -1,15 +1,14 @@
 import React from 'react';
 import BannerTop from "/components/BannerTop";
+import Pages from "/components/pages";
 
 const PrPage = () => {
     return (
-        <div>
-            <BannerTop/>
+        <>
+            <BannerTop src={"/assets/banners/Pr.jpg"}/>
 
-            <h1>
-                This is PrPage
-            </h1>
-        </div>
+            <Pages/>
+        </>
     );
 };
 

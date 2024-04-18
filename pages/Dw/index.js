@@ -1,15 +1,14 @@
 import React from 'react';
-import BannerTop from "/components/BannerTop"
+import BannerTop from "/components/BannerTop";
+import Pages from "/components/pages";
 
 const DwPage = () => {
     return (
-        <div>
-            <BannerTop/>
+        <>
+            <BannerTop src={"/assets/banners/Dw.jpg"}/>
 
-            <h1>
-                This is DwPage
-            </h1>
-        </div>
+            <Pages/>
+        </>
     );
 };
 

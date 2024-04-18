@@ -1,15 +1,14 @@
 import React from 'react';
-import BannerTop from "/components/BannerTop"
+import BannerTop from "/components/BannerTop";
+import Pages from "/components/Pages";
 
 const AePage = () => {
     return (
-        <div>
-            <BannerTop/>
+        <>
+            <BannerTop src={"/assets/banners/Ae.jpg"}/>
 
-            <h1>
-                This is AePage
-            </h1>
-        </div>
+            <Pages/>
+        </>
     );
 };
 

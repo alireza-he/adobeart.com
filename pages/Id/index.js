@@ -1,15 +1,14 @@
 import React from 'react';
 import BannerTop from "/components/BannerTop";
+import Pages from "/components/pages";
 
 const IdPage = () => {
     return (
-        <div>
-            <BannerTop/>
+        <>
+            <BannerTop src={"/assets/banners/Id.jpg"}/>
 
-            <h1>
-                This is IdPage
-            </h1>
-        </div>
+            <Pages/>
+        </>
     );
 };
 

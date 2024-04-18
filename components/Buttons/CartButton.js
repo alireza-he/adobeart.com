@@ -5,7 +5,7 @@ import styles from "./Buttons.module.css";
 const CartButton = () => {
     return (
         <button className={styles.mx_btn}>
-            <Image src={"/assets/shop.svg"}
+            <Image src={"/assets/headerIcons/shop.svg"}
                    alt={"login"}
                    width={15}
                    height={15}

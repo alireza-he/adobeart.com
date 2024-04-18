@@ -1,15 +1,16 @@
 import React from 'react';
 import BannerTop from "/components/BannerTop";
 import Pages from "/components/Pages";
+import TitleAndDescription from "/components/TitleAndDescription";
 
-const AnPage = () => {
+const Education = () => {
     return (
         <>
-            <BannerTop src={"/assets/banners/An.jpg"}/>
+            <BannerTop src={"/assets/banners/main.jpg"}/>
 
             <Pages/>
         </>
     );
 };
 
-export default AnPage;
+export default Education;

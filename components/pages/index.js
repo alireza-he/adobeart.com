@@ -1,69 +1,81 @@
 import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./Pages.module.css"
+import styles from "./Pages.module.css";
 
 const Pages = () => {
     const items = [
         {
             link: "/Ae",
             src: "/assets/pagesIcons/Ae.svg",
-            alt: "Ae"
+            alt: "Ae",
+            backgroundColor: "#9999F9"
         },
         {
             link: "/An",
             src: "/assets/pagesIcons/An.svg",
-            alt: "An"
+            alt: "An",
+            backgroundColor: "#9999F9"
         },
         {
             link: "/Pr",
             src: "/assets/pagesIcons/Pr.svg",
-            alt: "Pr"
+            alt: "Pr",
+            backgroundColor: "#9999F9"
         },
         {
             link: "/Lr",
             src: "/assets/pagesIcons/Lr.svg",
-            alt: "Lr"
+            alt: "Lr",
+            backgroundColor: "#55A5F9"
         },
         {
             link: "/Ps",
             src: "/assets/pagesIcons/Ps.svg",
-            alt: "Ps"
+            alt: "Ps",
+            backgroundColor: "#31A8FE"
         },
         {
             link: "/Fr",
             src: "/assets/pagesIcons/Fr.svg",
-            alt: "Fr"
+            alt: "Fr",
+            backgroundColor: "#55A5F9"
         },
         {
             link: "/Sa",
             src: "/assets/pagesIcons/Sa.svg",
-            alt: "Sa"
+            alt: "Sa",
+            backgroundColor: "#AAE559"
         },
         {
             link: "/Dn",
             src: "/assets/pagesIcons/Dn.svg",
-            alt: "Dn"
+            alt: "Dn",
+            backgroundColor: "#AAE559"
         },
         {
             link: "/Xd",
             src: "/assets/pagesIcons/Xd.svg",
-            alt: "Xd"
+            alt: "Xd",
+            backgroundColor: "#FF2BC2"
         },
         {
             link: "/Dw",
             src: "/assets/pagesIcons/Dw.svg",
-            alt: "Dw"
+            alt: "Dw",
+            backgroundColor: "#EE6FF0"
         },
         {
             link: "/Id",
             src: "/assets/pagesIcons/Id.svg",
-            alt: "Id"
+            alt: "Id",
+            backgroundColor: "#EC4E68"
         },
         {
             link: "/Ai",
             src: "/assets/pagesIcons/Ai.svg",
-            alt: "Ai"
+            alt: "Ai",
+            backgroundColor: "#F2A032"
         },
     ]
 
@@ -72,12 +84,16 @@ const Pages = () => {
             <div className={styles.items}>
                 {
                     items.map((item, index) => (
-                        <Link href={item.link} key={index} className={styles.item}>
+                        <Link
+                            href={item.link}
+                            key={index}
+                            className={`${styles.item} ${styles['item-' + (index + 1)]}`}
+                        >
                             <Image
                                 src={item.src}
                                 alt={item.alt}
-                                width={25}
-                                height={25}
+                                width={35}
+                                height={35}
                             />
                         </Link>
                     ))

@@ -5,7 +5,7 @@ import styles from "./Buttons.module.css";
 const SearchButton = () => {
     return (
         <button className={styles.mx_btn}>
-            <Image src={"/assets/search.svg"}
+            <Image src={"/assets/headerIcons/search.svg"}
                    alt={"login"}
                    width={15}
                    height={15}

@@ -25,7 +25,7 @@ function MyApp({Component, pageProps, publicData}) {
           <meta name="description" content={description}/>
           <meta property="og:description" content={description}/>
           <meta name="twitter:description" content={description}/>
-          {/*<link rel="icon" href={publicData?.logo ?? "/assets/islamicSources.png"}/>*/}
+          <link rel="icon" type="image/x-icon" href={"/favicon.svg"}/>
           {/*<link rel="stylesheet" href=""/>*/}
         </Head>
         <Layout>
