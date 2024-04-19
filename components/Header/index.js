@@ -1,5 +1,5 @@
 import * as React from 'react';
-import LogoSiteHeader from "./LogoSiteHeader";
+import LogoSite from "./LogoSite";
 import {useDesktop, useMobile} from "../Demensions";
 import HeaderMenu from "./HeaderMenu";
 import UserButton from "../Buttons/UserButton";
@@ -35,7 +35,7 @@ const Header = () => {
                         }
                     </div>
 
-                    <LogoSiteHeader/>
+                    <LogoSite/>
                 </Toolbar>
             </div>
         </AppBar>

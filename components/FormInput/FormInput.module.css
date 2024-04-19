@@ -1,7 +1,22 @@
 .formControl {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
 }
 
 .formControl:last-of-type {
     margin-bottom: 0;
+}
+
+.formControl fieldset {
+    border: none;
+}
+
+.formControl div::before, .formControl div::after {
+    border: none !important;
+    outline: none;
+    box-shadow: none;
+}
+
+.formControl div {
+    background: #fff !important;
+    border-radius: .5rem;
 }

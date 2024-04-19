@@ -1,38 +1,59 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
 import React from "react";
+import {CacheProvider} from '@emotion/react';
+import createCache from '@emotion/cache';
 import Head from "next/head";
 import Layout from "/layout";
-import '/styles/globals.css';
-import '/public/assets/fonts/iransans/style.css';
-import "slick-carousel/slick/slick.css";
+import rtlPlugin from 'stylis-plugin-rtl';
+import {prefixer} from 'stylis';
+import {createTheme, ThemeProvider} from '@mui/material/styles';
 import "slick-carousel/slick/slick-theme.css";
-
-// export default function App({ Component, pageProps }: AppProps) {
-//   return <Component {...pageProps} />;
-// }
+import "slick-carousel/slick/slick.css";
+import '/public/assets/fonts/iransans/style.css';
+import '/styles/globals.css';
+import {SnackbarProvider} from 'notistack'
 
 function MyApp({Component, pageProps, publicData}) {
-  const title = "Islamic sources"
-  const description = "A comprehensive website that collects, organizes and presents the Islamic sources received by the Messengers of Islam as well as by the religious leaders, researchers, intellectuals, and scholars of Islamic Thought";
+    const title = "AdobeARTS"
+    const description = "A comprehensive website for your full training for the job market as well as your projects in the areas of website design, motion graphics, poster design, business card, banner, etc.";
 
-  return (
-      <>
-        <Head>
-          <title>{title}</title>
-          <meta property="og:title" content={title}/>
-          <meta name="twitter:title" content={title}/>
-          <meta name="description" content={description}/>
-          <meta property="og:description" content={description}/>
-          <meta name="twitter:description" content={description}/>
-          <link rel="icon" type="image/x-icon" href={"/favicon.svg"}/>
-          {/*<link rel="stylesheet" href=""/>*/}
-        </Head>
-        <Layout>
-          <Component publicData={publicData} {...pageProps} />
-        </Layout>
-      </>
-  )
+    const theme = (outerTheme) =>
+        createTheme({
+            direction: 'rtl',
+            palette: {
+                // mode: outerTheme.palette.mode,
+            },
+        });
+
+    const cacheRtl = createCache({
+        key: 'muirtl',
+        stylisPlugins: [prefixer, rtlPlugin],
+    });
+
+    return (
+        <>
+            <Head>
+                <title>{title}</title>
+                <meta property="og:title" content={title}/>
+                <meta name="twitter:title" content={title}/>
+                <meta name="description" content={description}/>
+                <meta property="og:description" content={description}/>
+                <meta name="twitter:description" content={description}/>
+                <link rel="icon" type="image/x-icon" href={"/favicon.svg"}/>
+            </Head>
+
+            <CacheProvider value={cacheRtl}>
+                <ThemeProvider theme={theme}>
+                    <div dir="rtl">
+                        <SnackbarProvider>
+                            <Layout>
+                                <Component publicData={publicData} {...pageProps} />
+                            </Layout>
+                        </SnackbarProvider>
+                    </div>
+                </ThemeProvider>
+            </CacheProvider>
+        </>
+    )
 }
 
 

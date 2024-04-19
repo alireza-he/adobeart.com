@@ -2,5 +2,6 @@
     margin: 0 .5rem;
 }
 
-.searchBtn {
+.mx_btn svg:hover path {
+    fill: #d90b0b;
 }

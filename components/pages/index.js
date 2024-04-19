@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Pages.module.css";
 
 const Pages = () => {
+    const [colors, setColors] = useState(Array(12).fill('#F0F0F0'));
+
+    const handleClick = (index) => {
+        const newColors = [...colors];
+        newColors[index] = styles['item-' + (index + 1) + '-active']; // تغییر رنگ فعال
+        setColors(newColors);
+    };
+
     const items = [
         {
             link: "/Ae",
@@ -87,7 +95,8 @@ const Pages = () => {
                         <Link
                             href={item.link}
                             key={index}
-                            className={`${styles.item} ${styles['item-' + (index + 1)]}`}
+                            className={`${styles.item} ${styles['item-' + (index + 1)]} ${colors[index]}`}
+                            onClick={() => handleClick(index)}
                         >
                             <Image
                                 src={item.src}

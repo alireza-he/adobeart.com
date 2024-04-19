@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import LogoSiteHeader from "/components/Header/LogoSiteHeader";
+import LogoSite from "/components/Header/LogoSite";
 import Typography from "@mui/material/Typography";
 import styles from "./Footer.module.css"
 
@@ -38,18 +38,24 @@ const Footer = () => {
         <footer className={styles.FooterDiv}>
             <div className="container">
                 <div className={styles.logoSiteFooter}>
-                    <LogoSiteHeader/>
+                    <LogoSite/>
                 </div>
                 <div className={styles.socialMediaBoxRow}>
                     {
                         socialMediaIcons.map((s, index) => (
-                            <Link href={s.link} key={index}>
-                                <Image src={s.src}
-                                       alt={s.alt}
-                                       width={25}
-                                       height={25}
-                                />
-                            </Link>
+                            <>
+                                <Link href={s.link} key={index}>
+                                    <Image src={s.src}
+                                           alt={s.alt}
+                                           width={25}
+                                           height={25}
+                                    />
+                                </Link>
+                                {
+                                    index === 1 &&
+                                    <div className={styles.lineBetween}></div>
+                                }
+                            </>
                         ))
                     }
                 </div>

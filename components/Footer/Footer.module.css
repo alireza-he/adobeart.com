@@ -29,6 +29,12 @@
     margin: 0 .5rem;
 }
 
+.lineBetween {
+    width: 1px;
+    height: 1.5rem;
+    background: #999999;
+}
+
 .siteRightsText {
     display: flex;
     justify-content: center;

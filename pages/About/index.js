@@ -1,17 +1,14 @@
 import React from 'react';
-import AboutUs from "../../components/AboutAndContactUs/AboutUs";
-import ContactUs from "../../components/AboutAndContactUs/ContactUs";
-import BannerTop from "/components/BannerTop";
+import AboutUs from "@/components/AboutAndContactUs/AboutUs";
+import BannerTop from "@/components/BannerTop";
 // import {getRequest} from "functions/api";
 
 const About = ({data}) => {
     return (
         <>
-            <BannerTop/>
+            <BannerTop src={"/assets/banners/main.jpg"}/>
 
             <AboutUs/>
-
-            <ContactUs/>
         </>
     );
 };

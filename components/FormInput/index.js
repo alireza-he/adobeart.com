@@ -1,10 +1,8 @@
 import React, {forwardRef, useState, useImperativeHandle} from 'react';
-// import {useTranslator} from "translator";
-import styles from "./FormInput.module.css";
 import {TextField} from "@mui/material";
+import styles from "./FormInput.module.css";
 
 const Input = ({name, label, onChange, ...props}, ref) => {
-    // const {__} = useTranslator();
     const [value, setValue] = useState('');
 
     useImperativeHandle(ref, ()=> ({

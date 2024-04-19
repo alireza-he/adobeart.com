@@ -1,1 +1,7 @@
-
+.titleDiv {
+    margin: 0 0 1rem 0 !important;
+    font-size: 24px !important;
+    font-weight: bolder !important;
+    border-bottom: 2px solid #ff000f;
+    max-width: fit-content;
+}

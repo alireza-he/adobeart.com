@@ -2,9 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "link": ["./components/Link"],
-      "module/*": ["./components/*"],
-      "assets/*": ["./assets/*"]
+      "@/components/*": ["components/*"],
+      "@/mui/*": ["./components/mui/*"]
     }
   }
 }

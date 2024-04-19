@@ -2,9 +2,9 @@ import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
 
-const LogoSiteHeader = () => {
+const LogoSite = () => {
     return (
-        <Link href="/">
+        <Link href="/" style={{width:"fit-content"}}>
             <Image src={"/assets/AdobeArtsLogo.png"}
                    alt={"AdobeArts"}
                    width={175}
@@ -14,4 +14,4 @@ const LogoSiteHeader = () => {
     );
 };
 
-export default LogoSiteHeader;
+export default LogoSite;

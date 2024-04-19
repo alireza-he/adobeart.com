@@ -1,11 +1,25 @@
 import React from 'react';
+import Typography from "@mui/material/Typography";
+import styles from "./TitleAndDescription.module.css"
 
-
-const TitleAndDescription = () => {
+const TitleAndDescription = ({styleTitle, title, styleText, text}) => {
     return (
-        <h1>
-            This is titleAndDescription
-        </h1>
+        <>
+            <Typography component={"h2"} className={styles.titleDiv}>
+                {title}
+            </Typography>
+
+            {/*{*/}
+            {/*    data.descriptions &&*/}
+            <Typography
+                variant={"subtitle1"}
+                component={"p"} style={styleText}
+                // dangerouslySetInnerHTML={{__html: data.descriptions}}
+            >
+                {text}
+            </Typography>
+            {/*}*/}
+        </>
     );
 }
 

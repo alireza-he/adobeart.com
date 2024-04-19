@@ -1,0 +1,14 @@
+.wrapperLoginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F0F0F0;
+    margin: 1.5rem 0;
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+}
+
+.text {
+    margin: 1.5rem 0 !important;
+}

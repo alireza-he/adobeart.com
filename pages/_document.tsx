@@ -10,8 +10,8 @@ export default class MyDocument extends Document {
                     <meta name="emotion-insertion-point" content=""/>
                 </Head>
                 <body>
-                <Main/>
-                <NextScript/>
+                    <Main/>
+                    <NextScript/>
                 </body>
             </Html>
         );

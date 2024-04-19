@@ -1,3 +1,10 @@
+.formDiv{
+    background: #F0F0F0;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
 .formControl {
     display: flex;
     border-radius: 10px;
@@ -24,28 +31,17 @@
     border: 2px solid #0ec3c6;
 }
 
-.flexBox {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.wrapperSendBtn {
+    margin-top: .6rem;
 }
 
 .sendButton {
-    width: 40%;
-    margin-left: 1rem;
-    background: #d90b0b;
+    width: 100%;
+    background: #d90b0b !important;
     border-radius: .5rem;
 }
 
-[dir="rtl"] .sendButton {
-    margin-right: 1rem;
-}
-
 @media (max-width: 600px) {
-    .flexBox {
-        flex-direction: column;
-    }
-
     .sendButton {
         width: 100%;
         margin-top: 1rem;

@@ -1,0 +1,59 @@
+.wrapper {
+    width: 50%;
+    margin: 30px 0;
+}
+
+.wrapper label, .wrapper input {
+    letter-spacing: 0;
+}
+
+.formControlPassword {
+    width: 100%;
+    background: #fff !important;
+    margin-bottom: 1rem !important;
+    border-radius: .5rem;
+}
+
+.formControlPassword div {
+    background: #fff !important;
+}
+
+.formControlPassword div::before, .formControlPassword div::after {
+    border: none !important;
+}
+
+.footerLoginModal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.submitBtn {
+    display: flex;
+    width: 100% !important;
+    height: 2.5rem !important;
+    background: #fff !important;
+    color: #000 !important;
+    border-color: #fff !important;
+    border-radius: .5rem !important;
+    box-shadow: none !important;
+    margin: 1.5rem 0 !important;
+}
+
+.inputAdornment {
+    height: 100% !important;
+    border-right: 1px solid #999999;
+}
+
+.unRegisterText {
+    display: flex;
+    justify-content: center;
+    color: #979797;
+}
+
+.RegisterText {
+    color: #000 !important;
+    padding: 0 .5rem;
+    font-weight: bold;
+}
