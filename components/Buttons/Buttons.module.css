@@ -1,7 +1,13 @@
-.mx_btn {
+.mx_btn, .cartButton {
     margin: 0 .5rem;
 }
 
 .mx_btn svg:hover path {
     fill: #d90b0b;
+    transition: .5s;
+}
+
+.cartButton:hover path {
+    stroke: #d90b0b;
+    transition: .5s;
 }
