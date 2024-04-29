@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./Pages.module.css";
 
-const Pages = () => {
+const PagesBox = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const router = useRouter();
 
@@ -125,4 +125,4 @@ const Pages = () => {
     );
 };
 
-export default Pages;
+export default PagesBox;
