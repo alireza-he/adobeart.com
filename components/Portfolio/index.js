@@ -9,7 +9,7 @@ const PortfolioBoxes = () => {
     const items = [
         {
         src: "/assets/PortfolioPictures/portfolio_0.png", alt: "Portfolio example"
-    },
+        },
         {
             src: "/assets/PortfolioPictures/portfolio_1.png", alt: "Portfolio example"
         },
