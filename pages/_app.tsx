@@ -2,7 +2,7 @@ import React from "react";
 import {CacheProvider} from '@emotion/react';
 import createCache from '@emotion/cache';
 import Head from "next/head";
-import Layout from "/layout";
+import Layout from "../layout"
 import rtlPlugin from 'stylis-plugin-rtl';
 import {prefixer} from 'stylis';
 import {createTheme, ThemeProvider} from '@mui/material/styles';

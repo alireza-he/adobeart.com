@@ -47,8 +47,8 @@ const Footer = () => {
                                 <Link href={s.link} key={index}>
                                     <Image src={s.src}
                                            alt={s.alt}
-                                           width={25}
-                                           height={25}
+                                           width={30}
+                                           height={30}
                                     />
                                 </Link>
                                 {

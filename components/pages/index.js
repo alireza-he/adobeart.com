@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import React, {useState, useEffect} from 'react';
+import {useRouter} from 'next/router';
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Pages.module.css";
@@ -103,23 +103,25 @@ const PagesBox = () => {
     };
 
     return (
-        <div className={styles.wrapper}>
-            <div className={styles.items}>
-                {items.map((item, index) => (
-                    <Link
-                        href={item.link}
-                        key={index}
-                        className={`${styles.item} ${styles['item-' + (index + 1)]} ${index === activeIndex ? styles['item-' + (index + 1) + '-active'] : ''}`}
-                        onClick={() => handleClick(index)}
-                    >
-                        <Image
-                            src={item.src}
-                            alt={item.alt}
-                            width={35}
-                            height={35}
-                        />
-                    </Link>
-                ))}
+        <div className={"container"}>
+            <div className={styles.wrapper}>
+                <div className={styles.items}>
+                    {items.map((item, index) => (
+                        <Link
+                            href={item.link}
+                            key={index}
+                            className={`${styles.item} ${styles['item-' + (index + 1)]} ${index === activeIndex ? styles['item-' + (index + 1) + '-active'] : ''}`}
+                            onClick={() => handleClick(index)}
+                        >
+                            <Image
+                                src={item.src}
+                                alt={item.alt}
+                                width={35}
+                                height={35}
+                            />
+                        </Link>
+                    ))}
+                </div>
             </div>
         </div>
     );

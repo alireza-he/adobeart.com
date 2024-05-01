@@ -6,19 +6,25 @@ import Link from "@/components/Link";
 import styles from "./Portfolio.module.css";
 
 const PortfolioBoxes = () => {
-    const items = [{
+    const items = [
+        {
         src: "/assets/PortfolioPictures/portfolio_0.png", alt: "Portfolio example"
-    }, {
-        src: "/assets/PortfolioPictures/portfolio_1.png", alt: "Portfolio example"
-    }, {
-        src: "/assets/PortfolioPictures/portfolio_2.png", alt: "Portfolio example"
-    }, {
-        src: "/assets/PortfolioPictures/portfolio_3.png", alt: "Portfolio example"
-    }, {
-        src: "/assets/PortfolioPictures/portfolio_4.png", alt: "Portfolio example"
-    }, {
-        src: "/assets/PortfolioPictures/portfolio_5.png", alt: "Portfolio example"
-    }]
+    },
+        {
+            src: "/assets/PortfolioPictures/portfolio_1.png", alt: "Portfolio example"
+        },
+        {
+            src: "/assets/PortfolioPictures/portfolio_2.png", alt: "Portfolio example"
+        },
+        {
+            src: "/assets/PortfolioPictures/portfolio_3.png", alt: "Portfolio example"
+        },
+        {
+            src: "/assets/PortfolioPictures/portfolio_4.png", alt: "Portfolio example"
+        },
+        {
+            src: "/assets/PortfolioPictures/portfolio_5.png", alt: "Portfolio example"
+        }]
 
     return (<div>
         <div className={"container"}>
@@ -28,17 +34,19 @@ const PortfolioBoxes = () => {
         </div>
 
         <Grid container className={styles.wrapper}>
-            <Carousel className={styles.carouselDiv}>
-                {items.map((item, index) => (
-                    <Grid item key={index} className={styles.parentImg}>
-                        <img
-                            src={item.src}
-                            alt={item.alt}
-                            className={styles.img}
-                        />
-                    </Grid>
-                ))}
-            </Carousel>
+            <div className={"container"}>
+                <Carousel className={styles.carouselDiv}>
+                    {items.map((item, index) => (
+                        <Grid item key={index} className={styles.parentImg}>
+                            <img
+                                src={item.src}
+                                alt={item.alt}
+                                className={styles.img}
+                            />
+                        </Grid>
+                    ))}
+                </Carousel>
+            </div>
         </Grid>
 
 
