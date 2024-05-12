@@ -5,3 +5,7 @@
     border-bottom: 2px solid #ff000f;
     max-width: fit-content;
 }
+
+.textDiv {
+    margin-bottom: 1.5rem !important;
+}

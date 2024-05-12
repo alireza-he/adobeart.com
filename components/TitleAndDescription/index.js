@@ -5,7 +5,7 @@ import styles from "./TitleAndDescription.module.css"
 const TitleAndDescription = ({styleTitle, title, styleText, text}) => {
     return (
         <>
-            <Typography component={"h2"} className={styles.titleDiv}>
+            <Typography component={"h2"} className={styles.titleDiv} style={styleTitle}>
                 {title}
             </Typography>
 
@@ -13,7 +13,9 @@ const TitleAndDescription = ({styleTitle, title, styleText, text}) => {
             {/*    data.descriptions &&*/}
             <Typography
                 variant={"subtitle1"}
-                component={"p"} style={styleText}
+                component={"p"}
+                className={styles.textDiv}
+                style={styleText}
                 // dangerouslySetInnerHTML={{__html: data.descriptions}}
             >
                 {text}

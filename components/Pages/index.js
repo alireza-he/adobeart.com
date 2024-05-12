@@ -5,8 +5,20 @@ import Image from "next/image";
 import styles from "./Pages.module.css";
 
 const PagesBox = () => {
-    const [activeIndex, setActiveIndex] = useState(null);
     const router = useRouter();
+    const [activeIndex, setActiveIndex] = useState(null);
+    const [AePage, setAePage] = useState(true);
+    const [AnPage, setAnPage] = useState(false);
+    const [PrPage, setPrPage] = useState(false);
+    const [LrPage, setLrPage] = useState(false);
+    const [PsPage, setPsPage] = useState(false);
+    const [FrPage, setFrPage] = useState(false);
+    const [SaPage, setSaPage] = useState(false);
+    const [DnPage, setDnPage] = useState(false);
+    const [XdPage, setXdPage] = useState(false);
+    const [DwPage, setDwPage] = useState(false);
+    const [IdPage, setIdPage] = useState(false);
+    const [AiPage, setAiPage] = useState(false);
 
     const items = [
         {
@@ -98,6 +110,11 @@ const PagesBox = () => {
     }, [router.pathname]);
 
     const handleClick = (index) => {
+
+        if (items.link === "/Ae") {
+            setAePage(true)
+        }
+
         setActiveIndex(index);
         localStorage.setItem('activeIndex', index);
     };
@@ -107,8 +124,9 @@ const PagesBox = () => {
             <div className={styles.wrapper}>
                 <div className={styles.items}>
                     {items.map((item, index) => (
+                        AePage &&
                         <Link
-                            href={item.link}
+                            href={"/Pages"}
                             key={index}
                             className={`${styles.item} ${styles['item-' + (index + 1)]} ${index === activeIndex ? styles['item-' + (index + 1) + '-active'] : ''}`}
                             onClick={() => handleClick(index)}

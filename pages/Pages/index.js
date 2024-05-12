@@ -1,86 +1,29 @@
-import React, {useState} from 'react';
+import React from 'react';
+import PagesBox from "@/components/Pages";
+import BannerTop from "@/components/BannerTop";
+import TitleAndDescription from "@/components/TitleAndDescription";
+import SoftwareBox from "@/components/SoftwareBox";
 
 const Pages = () => {
-    const [AePage,setAePage] = useState();
-
-    const items = [
-        {
-            link: "/Ae",
-            src: "/assets/pagesIcons/Ae.svg",
-            alt: "Ae",
-            backgroundColor: "#9999F9"
-        },
-        {
-            link: "/An",
-            src: "/assets/pagesIcons/An.svg",
-            alt: "An",
-            backgroundColor: "#9999F9"
-        },
-        {
-            link: "/Pr",
-            src: "/assets/pagesIcons/Pr.svg",
-            alt: "Pr",
-            backgroundColor: "#9999F9"
-        },
-        {
-            link: "/Lr",
-            src: "/assets/pagesIcons/Lr.svg",
-            alt: "Lr",
-            backgroundColor: "#55A5F9"
-        },
-        {
-            link: "/Ps",
-            src: "/assets/pagesIcons/Ps.svg",
-            alt: "Ps",
-            backgroundColor: "#31A8FE"
-        },
-        {
-            link: "/Fr",
-            src: "/assets/pagesIcons/Fr.svg",
-            alt: "Fr",
-            backgroundColor: "#55A5F9"
-        },
-        {
-            link: "/Sa",
-            src: "/assets/pagesIcons/Sa.svg",
-            alt: "Sa",
-            backgroundColor: "#AAE559"
-        },
-        {
-            link: "/Dn",
-            src: "/assets/pagesIcons/Dn.svg",
-            alt: "Dn",
-            backgroundColor: "#AAE559"
-        },
-        {
-            link: "/Xd",
-            src: "/assets/pagesIcons/Xd.svg",
-            alt: "Xd",
-            backgroundColor: "#FF2BC2"
-        },
-        {
-            link: "/Dw",
-            src: "/assets/pagesIcons/Dw.svg",
-            alt: "Dw",
-            backgroundColor: "#EE6FF0"
-        },
-        {
-            link: "/Id",
-            src: "/assets/pagesIcons/Id.svg",
-            alt: "Id",
-            backgroundColor: "#EC4E68"
-        },
-        {
-            link: "/Ai",
-            src: "/assets/pagesIcons/Ai.svg",
-            alt: "Ai",
-            backgroundColor: "#F2A032"
-        },
-    ];
-
     return (
         <div>
-            
+            <BannerTop src={"/assets/banners/main.jpg"}/>
+
+            <PagesBox/>
+
+            <div className={"container"}>
+                <TitleAndDescription
+                    title={"معرفی و آموزش جامع نرم افزارهای ادوبی"}
+                    text={`از دانـش آمـوزان و افـراد مبتـدی گرفتــه تـا کاربـران حرفـه ای و طراحـان و کاربـران کامپیـوتری همـگی می تواننـــد از انـواع نـرم افزارهــای ادوبــی استفـــاده کننــد. در ادامـــه به معــرفی جامــع و کامــل ایــن 
+                    نرم افزارهــای مهــم و کاربــردی می پردازیـم. شرکــت توسعـــه دهنـــده ادوبـــی یکی از بـزرگ تریـن و شناخته شده ترین توسعـه دهنـدگان نرم افزاری در سراســر دنیاست. این شرکت بسیار بزرگ و مشهور، 
+                    در حــال حاضــر بالــغ بــر 50 نرم افــزار کاربــردی در زمینــه های مختــلف دارد کــه هــر یک از این برنــامه ها به نوبــه خود دارای ورژن هــای متعــدد و آپدیـت هــای مختلــف اند. ایــن برنامـــه های متــعدد 
+                    و متنــوع ادوبــی کاربــرد هــای بسیــار گستــرده ای هــم دارنــد. برای بسیــاری از افــراد تمــام نرم افــزار های ادوبـی شناختـه شده نیستــند و نمی داننـد هر یک از این برنامـه های کامپیوتری دقیقا چه کاری 
+                    انجام می دهند و در چه زمینه ای مورد استفاده قرار می گیرند. در این جا ما می خواهیم به صورت کامل و جامع به بررسی و معرفی نرم افزارهای ادوبی بپردازیم و از ویژگی ها و قابلیت های آن ها پرده برداریم. آشنـایی با کاربـرد ها و مشخصات نرم افزار های ادوبـی به کاربـران مشتــاق کمــک می کنــد تا با توجــه به زمینــه استفـاده ای که در نظر دارند، بهترین نرم افزارهای ادوبی را انتخاب و استفاده کنند.`}
+                />
+
+                <SoftwareBox/>
+            </div>
+
         </div>
     );
 };

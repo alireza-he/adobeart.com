@@ -3,89 +3,93 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  direction: rtl;
-  font-family: "iran sans", sans-serif;
-  /*color: rgb(var(--foreground-rgb));*/
-  /*background: linear-gradient(*/
-  /*    to bottom,*/
-  /*    transparent,*/
-  /*    rgb(var(--background-end-rgb))*/
-  /*  )*/
-  /*  rgb(var(--background-start-rgb));*/
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    direction: rtl;
+    font-family: "iran sans", sans-serif;
+    /*color: rgb(var(--foreground-rgb));*/
+    /*background: linear-gradient(*/
+    /*    to bottom,*/
+    /*    transparent,*/
+    /*    rgb(var(--background-end-rgb))*/
+    /*  )*/
+    /*  rgb(var(--background-start-rgb));*/
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 button {
-  color: #fff;
-  text-transform: none !important;
+    color: #fff;
+    text-transform: none !important;
 }
 
 .fillPathWhite {
-  min-width: 1.5rem;
-  min-height: 1.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .fillPathBlack path {
-  fill: #979797;
+    fill: #979797;
 }
 
 .container {
-  padding: 0 10rem;
-  margin: auto;
-  width: 100%;
+    padding: 0 10rem;
+    margin: auto;
+    width: 100%;
 }
 
 .border {
-  border: 1px solid #e1e1e1;
-  border-radius: 0.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
 }
 
-button .slick-arrow{
-  display: none !important;
+button .slick-arrow {
+    display: none !important;
+}
+
+mt_1-5rem {
+    margin-top: 1.5rem !important;
 }
 
 @media (max-width: 992px) {
-  p {
-    line-height: 24px !important;
-    text-align: justify !important;
-  }
+    p {
+        line-height: 24px !important;
+        text-align: justify !important;
+    }
 
-  .container {
-    padding: 0 1rem;
-  }
+    .container {
+        padding: 0 1rem;
+    }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
 
 

@@ -1,0 +1,24 @@
+.wrapperBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #F0F0F0;
+    border-radius: 1rem;
+}
+
+.parentItems {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nameTraining {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #979797;
+    font-weight: bold;
+}
