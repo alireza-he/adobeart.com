@@ -21,7 +21,7 @@ body {
     margin: 0;
     font-size: 14px;
     direction: rtl;
-    font-family: "iran sans", sans-serif;
+    font-family: "Peyda", sans-serif;
     /*color: rgb(var(--foreground-rgb));*/
     /*background: linear-gradient(*/
     /*    to bottom,*/
@@ -85,11 +85,3 @@ mt_1-5rem {
         padding: 0 1rem;
     }
 }
-
-@layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
-}
-
-

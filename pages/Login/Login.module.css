@@ -4,8 +4,9 @@
     align-items: center;
     justify-content: center;
     background: #F0F0F0;
-    margin: 1.5rem 0;
-    padding: 3rem 1rem;
+    max-width: 50%;
+    margin: auto;
+    padding: 4rem 1rem;
     border-radius: 1rem;
 }
 

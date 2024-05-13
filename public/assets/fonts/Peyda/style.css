@@ -1,0 +1,22 @@
+﻿@font-face {
+    font-family: isx;
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url('./WebFonts/woff/PeydaWebFaNum-Bold.woff') format('woff'),
+    url('./WebFonts/woff2/PeydaWebFaNum-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: isx;
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url('./WebFonts/woff/PeydaWebFaNum-Regular.woff') format('woff'),
+    url('./WebFonts/woff2/PeydaWebFaNum-Regular.woff2') format('woff2');
+}
+
+* {
+    font-family: isx, sans-serif !important;
+    font-feature-settings: "ss02";
+}

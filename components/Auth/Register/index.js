@@ -1,14 +1,14 @@
 import React, {useState} from "react";
-import {FilledInput, TextField} from "@mui/material";
+import dynamic from "next/dynamic";
 import {useNotification} from "@/components/Functions/notification";
 import FormInput from "@/components/FormInput";
-import styles from "./Register.module.css"
+import {FilledInput} from "@mui/material";
 import Button from "@mui/material/Button";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
-import dynamic from "next/dynamic";
 import Typography from "@mui/material/Typography";
+import styles from "./Register.module.css"
 
 const IconButton = dynamic(() => import("@mui/material/IconButton", {ssr: false}))
 const Visibility = dynamic(() => import("@mui/icons-material/Visibility", {ssr: false}))

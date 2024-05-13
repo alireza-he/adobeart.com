@@ -11,7 +11,7 @@ const Carousel = ({children, className}) => {
         centerMode: true,
         centerPadding: "100px",
         autoplay: true,
-        speed: 2000,
+        speed: 10000,
         autoplaySpeed: 500,
         cssEase: "linear",
         responsive: [

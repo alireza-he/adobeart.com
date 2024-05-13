@@ -9,27 +9,27 @@ import styles from "./LatestProducts.module.css";
 const LatestProducts = () => {
     const itemData = [
         {
-            img: 'https://images.unsplash.com/photo-1549388604-817d15aa0110',
+            img: '/assets/none/none-00.jpg',
             title: 'Bed',
         },
         {
-            img: 'https://images.unsplash.com/photo-1525097487452-6278ff080c31',
+            img: '/assets/none/none-01.jpg',
             title: 'Books',
         },
         {
-            img: 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6',
+            img: '/assets/none/none-02.jpg',
             title: 'Sink',
         },
         {
-            img: 'https://images.unsplash.com/photo-1563298723-dcfebaa392e3',
+            img: '/assets/none/none-03.jpg',
             title: 'Kitchen',
         },
         {
-            img: 'https://images.unsplash.com/photo-1588436706487-9d55d73a39e3',
+            img: '/assets/none/none-06.jpg',
             title: 'Blinds',
         },
         {
-            img: 'https://images.unsplash.com/photo-1574180045827-681f8a1a9622',
+            img: '/assets/none/none-05.jpg',
             title: 'Chairs',
         },
         {
@@ -53,7 +53,7 @@ const LatestProducts = () => {
             title: 'Candle',
         },
         {
-            img: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4',
+            img: '/assets/none/none-06.jpg',
             title: 'Coffee table',
         },
     ];

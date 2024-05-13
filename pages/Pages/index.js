@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PagesBox from "@/components/Pages";
 import BannerTop from "@/components/BannerTop";
 import TitleAndDescription from "@/components/TitleAndDescription";
 import SoftwareBox from "@/components/SoftwareBox";
 
 const Pages = () => {
+    const [page, setPage] = useState(true);
+
     return (
         <div>
             <BannerTop src={"/assets/banners/main.jpg"}/>
