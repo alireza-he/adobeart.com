@@ -75,6 +75,17 @@ mt_1-5rem {
     margin-top: 1.5rem !important;
 }
 
+@media (max-width: 1024px) {
+    p {
+        line-height: 24px !important;
+        text-align: justify !important;
+    }
+
+    .container {
+        padding: 0 5rem;
+    }
+}
+
 @media (max-width: 992px) {
     p {
         line-height: 24px !important;

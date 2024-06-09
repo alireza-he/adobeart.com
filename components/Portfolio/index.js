@@ -12,10 +12,8 @@ const PortfolioBoxes = ({data}) => {
                 <Typography variant={"h6"} component={"h3"} className={styles.title}>
                     {data.title}
                 </Typography>
-            </div>
 
-            <Grid container className={styles.wrapper}>
-                <div className={"container"}>
+                <Grid container className={styles.wrapper}>
                     <Carousel className={styles.carouselDiv}>
                         {data.items.map((item, index) => (
                             <Grid item key={index} className={styles.parentImg}>
@@ -27,17 +25,16 @@ const PortfolioBoxes = ({data}) => {
                             </Grid>
                         ))}
                     </Carousel>
-                </div>
-            </Grid>
+                </Grid>
 
-            {data.moreBtnText &&
-                <div className={"container"}>
+                {data.moreBtnText &&
                     <Link to={"/Portfolio"} className={styles.parentMorBtn}>
                         <button className={styles.moreBtn}>
                             {data.moreBtnText}
                         </button>
                     </Link>
-                </div>}
+                }
+            </div>
         </>
     );
 };

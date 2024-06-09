@@ -3,11 +3,14 @@ import {useRouter} from 'next/router';
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Pages.module.css";
+import LandingPages from "@/components/Pages/Landing";
+import AePage from "@/components/Pages/Ae";
 
 const PagesBox = () => {
     const router = useRouter();
     const [activeIndex, setActiveIndex] = useState(null);
-    const [AePage, setAePage] = useState(true);
+    const [defaultPage, setDefaultPage] = useState(true);
+    const [aePage, setAePage] = useState(false);
     const [AnPage, setAnPage] = useState(false);
     const [PrPage, setPrPage] = useState(false);
     const [LrPage, setLrPage] = useState(false);
@@ -111,8 +114,10 @@ const PagesBox = () => {
 
     const handleClick = (index) => {
 
-        if (items.link === "/Ae") {
-            setAePage(true)
+        if (items[0].link === "/Ae") {
+            // alert("done")
+            setDefaultPage(false);
+            setAePage(true);
         }
 
         setActiveIndex(index);
@@ -121,26 +126,34 @@ const PagesBox = () => {
 
     return (
         <div className={"container"}>
+
             <div className={styles.wrapper}>
                 <div className={styles.items}>
                     {items.map((item, index) => (
-                        AePage &&
-                        <Link
-                            href={"/Pages"}
-                            key={index}
-                            className={`${styles.item} ${styles['item-' + (index + 1)]} ${index === activeIndex ? styles['item-' + (index + 1) + '-active'] : ''}`}
+                        // <Link
+                        //     href={"/Pages"}
+                        //     key={index}
+                        //     className={`${styles.item} ${styles['item-' + (index + 1)]} ${index === activeIndex ? styles['item-' + (index + 1) + '-active'] : ''}`}
+                        //
+                        // >
+                        <Image
+                            src={item.src}
+                            alt={item.alt}
+                            width={35}
+                            height={35}
                             onClick={() => handleClick(index)}
-                        >
-                            <Image
-                                src={item.src}
-                                alt={item.alt}
-                                width={35}
-                                height={35}
-                            />
-                        </Link>
+                        />
+                        // </Link>
                     ))}
                 </div>
             </div>
+
+            {
+                defaultPage ? <LandingPages/> : null
+            }
+            {
+                aePage ? <AePage/> : null
+            }
         </div>
     );
 };

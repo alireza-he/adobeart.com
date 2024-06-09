@@ -1,6 +1,5 @@
 import React from "react"
 import BannerTop from "@/components/BannerTop";
-import PagesBox from "@/components/Pages";
 import PortfolioBoxes from "@/components/Portfolio";
 import LatestProducts from "@/components/LatestProducts";
 import BusinessStatistics from "@/components/BusinessStatistics";
@@ -65,16 +64,13 @@ const Home = () => {
                 src: "/assets/teamMembers/sedMojtabaPhoto.png", alt: "Portfolio example"
             },
             {
-                src: "/assets/teamMembers/mojtabaPhoto.png", alt: "Portfolio example"
+                src: "/assets/teamMembers/heidariPhoto.png", alt: "Portfolio example"
             },
             {
-                src: "/assets/teamMembers/sedMojtabaPhoto.png", alt: "Portfolio example"
+                src: "/assets/teamMembers/naijPhoto.png", alt: "Portfolio example"
             },
             {
-                src: "/assets/teamMembers/mojtabaPhoto.png", alt: "Portfolio example"
-            },
-            {
-                src: "/assets/teamMembers/sedMojtabaPhoto.png", alt: "Portfolio example"
+                src: "/assets/teamMembers/soheilPhoto.png", alt: "Portfolio example"
             }
         ]
     }
@@ -82,8 +78,6 @@ const Home = () => {
     return (
         <>
             <BannerTop src={"/assets/banners/main.jpg"}/>
-
-            <PagesBox/>
 
             <PortfolioBoxes data={dataPortfolioBoxes}/>
 
