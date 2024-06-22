@@ -2,26 +2,11 @@ import React, {useState, useEffect} from 'react';
 import {useRouter} from 'next/router';
 import Image from "next/image";
 import Link from "@/components/Link";
-// import LandingPages from "@/components/Pages/Landing";
 import styles from "./Pages.module.css";
 
 const PagesBox = () => {
     const router = useRouter();
     const [activeIndex, setActiveIndex] = useState(null);
-    const [defaultPage, setDefaultPage] = useState(true);
-    // const [aePage, setAePage] = useState(false);
-    // const [AnPage, setAnPage] = useState(false);
-    // const [PrPage, setPrPage] = useState(false);
-    // const [LrPage, setLrPage] = useState(false);
-    // const [PsPage, setPsPage] = useState(false);
-    // const [FrPage, setFrPage] = useState(false);
-    // const [SaPage, setSaPage] = useState(false);
-    // const [DnPage, setDnPage] = useState(false);
-    // const [XdPage, setXdPage] = useState(false);
-    // const [DwPage, setDwPage] = useState(false);
-    // const [IdPage, setIdPage] = useState(false);
-    // const [AiPage, setAiPage] = useState(false);
-
     const items = [
         {
             link: "/Ae",
@@ -96,7 +81,6 @@ const PagesBox = () => {
             backgroundColor: "#F2A032"
         },
     ];
-
     const validPaths = items.map(item => item.link);
 
     useEffect(() => {
@@ -112,20 +96,12 @@ const PagesBox = () => {
     }, [router.pathname]);
 
     const handleClick = (index) => {
-
-        // if (items[0].link === "/Ae") {
-        //     // alert("done")
-        //     setDefaultPage(false);
-        //     setAePage(true);
-        // }
-
         setActiveIndex(index);
         localStorage.setItem('activeIndex', index);
     };
 
     return (
         <div className={"container"}>
-
             <div className={styles.wrapper}>
                 <div className={styles.items}>
                     {items.map((item, index) => (
@@ -146,15 +122,6 @@ const PagesBox = () => {
                     ))}
                 </div>
             </div>
-
-            {/*{*/}
-            {/*    defaultPage ?*/}
-            {/*<LandingPages/>*/}
-            {/*: null*/}
-            {/* }*/}
-            {/*{*/}
-            {/*    aePage ? <AePage/> : null*/}
-            {/*}*/}
         </div>
     );
 };
