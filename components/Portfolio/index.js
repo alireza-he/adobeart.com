@@ -34,6 +34,8 @@ const PortfolioBoxes = ({data}) => {
                         </button>
                     </Link>
                 }
+
+                <input />
             </div>
         </>
     );

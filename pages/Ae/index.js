@@ -1,10 +1,12 @@
 import React from 'react';
-import BannerTop from "/components/BannerTop";
+import Pages from "@/components/Pages";
 
 const AePage = () => {
     return (
         <>
-            <BannerTop src={"/assets/banners/Ae.jpg"}/>
+            <Pages/>
+
+            <h1>این صفحه Ae هستش</h1>
         </>
     );
 };

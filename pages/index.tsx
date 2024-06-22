@@ -3,6 +3,7 @@ import BannerTop from "@/components/BannerTop";
 import PortfolioBoxes from "@/components/Portfolio";
 import LatestProducts from "@/components/LatestProducts";
 import BusinessStatistics from "@/components/BusinessStatistics";
+import Pages from "@/components/Pages";
 
 const Home = () => {
     const dataPortfolioBoxes = {
@@ -77,7 +78,7 @@ const Home = () => {
 
     return (
         <>
-            <BannerTop src={"/assets/banners/main.jpg"}/>
+            <Pages/>
 
             <PortfolioBoxes data={dataPortfolioBoxes}/>
 

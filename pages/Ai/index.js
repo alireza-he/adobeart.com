@@ -2,14 +2,14 @@ import React from 'react';
 import BannerTop from "/components/BannerTop";
 import Pages from "/components/Pages";
 
-const IdPage = () => {
+const AiPage = () => {
     return (
         <>
-            <BannerTop src={"/assets/banners/Id.jpg"}/>
-
             <Pages/>
+
+            <h1>این صفحه Ai هستش</h1>
         </>
     );
 };
 
-export default IdPage;
+export default AiPage;

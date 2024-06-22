@@ -7,8 +7,6 @@ const Education = () => {
     return (
         <>
             <BannerTop src={"/assets/banners/main.jpg"}/>
-
-            <Pages/>
         </>
     );
 };

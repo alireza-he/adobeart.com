@@ -1,27 +1,26 @@
 import React, {useState, useEffect} from 'react';
 import {useRouter} from 'next/router';
-import Link from "next/link";
 import Image from "next/image";
+import Link from "@/components/Link";
+// import LandingPages from "@/components/Pages/Landing";
 import styles from "./Pages.module.css";
-import LandingPages from "@/components/Pages/Landing";
-import AePage from "@/components/Pages/Ae";
 
 const PagesBox = () => {
     const router = useRouter();
     const [activeIndex, setActiveIndex] = useState(null);
     const [defaultPage, setDefaultPage] = useState(true);
-    const [aePage, setAePage] = useState(false);
-    const [AnPage, setAnPage] = useState(false);
-    const [PrPage, setPrPage] = useState(false);
-    const [LrPage, setLrPage] = useState(false);
-    const [PsPage, setPsPage] = useState(false);
-    const [FrPage, setFrPage] = useState(false);
-    const [SaPage, setSaPage] = useState(false);
-    const [DnPage, setDnPage] = useState(false);
-    const [XdPage, setXdPage] = useState(false);
-    const [DwPage, setDwPage] = useState(false);
-    const [IdPage, setIdPage] = useState(false);
-    const [AiPage, setAiPage] = useState(false);
+    // const [aePage, setAePage] = useState(false);
+    // const [AnPage, setAnPage] = useState(false);
+    // const [PrPage, setPrPage] = useState(false);
+    // const [LrPage, setLrPage] = useState(false);
+    // const [PsPage, setPsPage] = useState(false);
+    // const [FrPage, setFrPage] = useState(false);
+    // const [SaPage, setSaPage] = useState(false);
+    // const [DnPage, setDnPage] = useState(false);
+    // const [XdPage, setXdPage] = useState(false);
+    // const [DwPage, setDwPage] = useState(false);
+    // const [IdPage, setIdPage] = useState(false);
+    // const [AiPage, setAiPage] = useState(false);
 
     const items = [
         {
@@ -114,11 +113,11 @@ const PagesBox = () => {
 
     const handleClick = (index) => {
 
-        if (items[0].link === "/Ae") {
-            // alert("done")
-            setDefaultPage(false);
-            setAePage(true);
-        }
+        // if (items[0].link === "/Ae") {
+        //     // alert("done")
+        //     setDefaultPage(false);
+        //     setAePage(true);
+        // }
 
         setActiveIndex(index);
         localStorage.setItem('activeIndex', index);
@@ -130,30 +129,32 @@ const PagesBox = () => {
             <div className={styles.wrapper}>
                 <div className={styles.items}>
                     {items.map((item, index) => (
-                        // <Link
-                        //     href={"/Pages"}
-                        //     key={index}
-                        //     className={`${styles.item} ${styles['item-' + (index + 1)]} ${index === activeIndex ? styles['item-' + (index + 1) + '-active'] : ''}`}
-                        //
-                        // >
-                        <Image
-                            src={item.src}
-                            alt={item.alt}
-                            width={35}
-                            height={35}
-                            onClick={() => handleClick(index)}
-                        />
-                        // </Link>
+                        <Link
+                            href={item.link}
+                            key={index}
+                            className={`${styles.item} ${styles['item-' + (index + 1)]} ${index === activeIndex ? styles['item-' + (index + 1) + '-active'] : ''}`}
+
+                        >
+                            <Image
+                                src={item.src}
+                                alt={item.alt}
+                                width={35}
+                                height={35}
+                                onClick={() => handleClick(index)}
+                            />
+                        </Link>
                     ))}
                 </div>
             </div>
 
-            {
-                defaultPage ? <LandingPages/> : null
-            }
-            {
-                aePage ? <AePage/> : null
-            }
+            {/*{*/}
+            {/*    defaultPage ?*/}
+            {/*<LandingPages/>*/}
+            {/*: null*/}
+            {/* }*/}
+            {/*{*/}
+            {/*    aePage ? <AePage/> : null*/}
+            {/*}*/}
         </div>
     );
 };
