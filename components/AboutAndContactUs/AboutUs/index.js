@@ -25,7 +25,7 @@ const AboutUs = ({data = {}}) => {
                     شروع یک همکاری هیجان‌انگیز، همین امروز با ما تماس بگیرید.`
 
     return (
-        <div className={"container"} style={{margin: "1.5rem 0"}}>
+        <div className={"container"} style={{margin: "1.5rem auto"}}>
             <TitleAndDescription
                 title={"درباره ما"}
                 text={textAboutUs}

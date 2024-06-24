@@ -1,5 +1,5 @@
 .wrapper {
-    background: #000;
+    background: #F0F0F0;
     padding: 1.5rem 0;
 }
 
@@ -11,6 +11,16 @@
     font-weight: 500 !important;
 }
 
+.itemDiv {
+    width: 100% !important;
+    height: 18rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 1rem !important;
+}
+
 .parentMorBtn {
     display: flex;
     justify-content: center;
@@ -19,8 +29,8 @@
 }
 
 .moreBtn {
-    background: #F0F0F0;
+    background: #BDBDBD;
     padding: .75rem 1.5rem;
-    color: #000;
+    color: #fff;
     border-radius: 2.5rem;
 }
