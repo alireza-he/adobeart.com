@@ -17,20 +17,20 @@ const HeaderMenu = () => {
             "route":"/Education"
         },
         {
-            "title": "نمونه کار",
+            "title": "تولیدات",
             "route":"/Portfolio"
         },
         {
-            "title": "سفارش",
+            "title": "سفارشات",
             "route":"/Orders"
         },
         {
-            "title": "تعرفه قیمت",
+            "title": "نرخ خدمات",
             "route":"/Price"
         },
         {
-            "title": "پشتیبانی",
-            "route":"/Support"
+            "title": "مجله",
+            "route":"/Blog"
         },
         {
             "title": "درباره ما",

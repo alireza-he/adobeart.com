@@ -1,4 +1,4 @@
-.parentImage{
+.parentImage {
     width: 30vw;
     margin: auto;
 }
@@ -11,4 +11,9 @@
     line-height: 1.75rem;
     font-size: 14px;
     text-align: justify;
+}
+
+.parentSocialMediaIcons img {
+    width: 2rem !important;
+    height: 2rem !important;
 }

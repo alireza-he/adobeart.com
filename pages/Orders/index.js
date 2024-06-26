@@ -1,10 +1,13 @@
 import React from 'react';
+import {ChromePicker} from "react-color";
 
 const Orders = () => {
     return (
-        <h1>
-            This is Orders page
-        </h1>
+        <>
+            <div className={"container"}>
+                <ChromePicker />
+            </div>
+        </>
     );
 };
 

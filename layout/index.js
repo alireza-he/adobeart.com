@@ -2,8 +2,8 @@ import React, {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import styles from "./layout.module.css";
 import BannerTop from "@/components/BannerTop";
+import styles from "./layout.module.css";
 
 const Layout = ({children}) => {
     const [bannerImage, setBannerImage] = useState('');
@@ -11,6 +11,15 @@ const Layout = ({children}) => {
 
     useEffect(() => {
         switch (router.pathname) {
+            case '/Education':
+                setBannerImage('/assets/banners/Education.jpg');
+                break;
+            case '/Orders':
+                setBannerImage('/assets/banners/Orders.jpg');
+                break;
+            case '/About':
+                setBannerImage('/assets/banners/About.jpg');
+                break;
             case '/Ae':
                 setBannerImage('/assets/banners/Ae.jpg');
                 break;
