@@ -38,8 +38,6 @@ const HeaderMenu = () => {
         },
     ]
 
-    console.log(router.pathname, "header")
-
     return (
         <>
             {
