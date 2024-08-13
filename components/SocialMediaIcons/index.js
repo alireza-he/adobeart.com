@@ -17,8 +17,8 @@ const SocialMediaIcons = ({socialMediaIconsData}) => {
                                 <Image
                                     src={s.src}
                                     alt={s.alt}
-                                    width={30}
-                                    height={30}
+                                    width={20}
+                                    height={20}
                                     className={styles.icon}
                                 />
                             </div>

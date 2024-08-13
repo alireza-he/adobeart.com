@@ -68,7 +68,16 @@ const LatestProducts = () => {
                 <Box sx={{flexGrow: 1}}>
                     <Grid container spacing={3}>
                         <Grid container item spacing={3}>
-                            <Grid item xs={4}>
+                            <Grid item xs={3}>
+                                <Item className={styles.itemDiv}>
+                                    <img
+                                        src={"/assets/latestProducts/latestProducts-05.jpg"}
+                                        alt={"latestProducts"}
+                                        loading="lazy"
+                                    />
+                                </Item>
+                            </Grid>
+                            <Grid item xs={3}>
                                 <Item className={styles.itemDiv}>
                                     <img
                                         src={"/assets/latestProducts/latestProducts-01.jpg"}
@@ -77,7 +86,7 @@ const LatestProducts = () => {
                                     />
                                 </Item>
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid item xs={3}>
                                 <Item className={styles.itemDiv}>
                                     <img
                                         src={"/assets/latestProducts/latestProducts-02.jpg"}
@@ -86,7 +95,7 @@ const LatestProducts = () => {
                                     />
                                 </Item>
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid item xs={3}>
                                 <Item className={styles.itemDiv}>
                                     <img
                                         src={"/assets/latestProducts/latestProducts-03.jpg"}
@@ -97,7 +106,7 @@ const LatestProducts = () => {
                             </Grid>
                         </Grid>
                         <Grid container item spacing={3}>
-                            <Grid item xs={4}>
+                            <Grid item xs={3}>
                                 <Item className={styles.itemDiv}>
                                     <img
                                         src={"/assets/latestProducts/latestProducts-04.jpg"}
@@ -106,7 +115,25 @@ const LatestProducts = () => {
                                     />
                                 </Item>
                             </Grid>
-                            <Grid item xs={8}>
+                            <Grid item xs={3}>
+                                <Item className={styles.itemDiv}>
+                                    <img
+                                        src={"/assets/latestProducts/latestProducts-04.jpg"}
+                                        alt={"latestProducts"}
+                                        loading="lazy"
+                                    />
+                                </Item>
+                            </Grid>
+                            <Grid item xs={3}>
+                                <Item className={styles.itemDiv}>
+                                    <img
+                                        src={"/assets/latestProducts/latestProducts-05.jpg"}
+                                        alt={"latestProducts"}
+                                        loading="lazy"
+                                    />
+                                </Item>
+                            </Grid>
+                            <Grid item xs={3}>
                                 <Item className={styles.itemDiv}>
                                     <img
                                         src={"/assets/latestProducts/latestProducts-05.jpg"}
@@ -126,10 +153,19 @@ const LatestProducts = () => {
                                     />
                                 </Item>
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid item xs={3}>
                                 <Item className={styles.itemDiv}>
                                     <img
                                         src={"/assets/latestProducts/latestProducts-02.jpg"}
+                                        alt={"latestProducts"}
+                                        loading="lazy"
+                                    />
+                                </Item>
+                            </Grid>
+                            <Grid item xs={3}>
+                                <Item className={styles.itemDiv}>
+                                    <img
+                                        src={"/assets/latestProducts/latestProducts-05.jpg"}
                                         alt={"latestProducts"}
                                         loading="lazy"
                                     />
@@ -173,7 +209,8 @@ const LatestProducts = () => {
                 </Link>
             </div>
         </div>
-    );
+    )
+        ;
 };
 
 export default LatestProducts;

@@ -3,13 +3,11 @@ import Slider from "react-slick";
 
 const Carousel = ({children, className}) => {
     const settings = {
-        className: "center",
-        infinite: false,
-        slidesToShow: 5,
+        infinite: true,
+        slidesToShow: 6,
         slidesToScroll: 1,
         swipeToSlide: false,
-        centerMode: false,
-        autoplay: false,
+        autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
         pauseOnHover: true,

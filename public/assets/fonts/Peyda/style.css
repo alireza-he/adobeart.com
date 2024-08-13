@@ -12,8 +12,8 @@
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-    src: url('./WebFonts/woff/PeydaWebFaNum-Regular.woff') format('woff'),
-    url('./WebFonts/woff2/PeydaWebFaNum-Regular.woff2') format('woff2');
+    src: url('./WebFonts/woff/PeydaWebFaNum-Medium.woff') format('woff'),
+    url('./WebFonts/woff2/PeydaWebFaNum-Medium.woff2') format('woff2');
 }
 
 * {

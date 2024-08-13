@@ -101,7 +101,7 @@ const PagesBox = () => {
     };
 
     return (
-        <div className={"container"}>
+        <div className={"container mt_1-5rem"}>
             <div className={styles.wrapper}>
                 <div className={styles.items}>
                     {items.map((item, index) => (

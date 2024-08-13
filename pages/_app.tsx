@@ -8,7 +8,7 @@ import {prefixer} from 'stylis';
 import {createTheme, ThemeProvider} from '@mui/material/styles';
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import '/public/assets/fonts/iransans/style.css';
+import '/public/assets/fonts/Peyda/style.css';
 import '/styles/globals.css';
 import {SnackbarProvider} from 'notistack'
 

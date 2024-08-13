@@ -12,13 +12,10 @@
     width: 100%;
 }
 
-.items a {
-}
-
 .item {
     background-color: #F0F0F0;
     transition: background-color 0.3s;
-    padding: 1rem;
+    padding: 1.1rem;
     border-radius: .5rem;
     display: flex;
     align-items: center;
