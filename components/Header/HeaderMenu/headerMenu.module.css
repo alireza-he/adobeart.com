@@ -9,6 +9,7 @@
     margin: 0;
     font-size: 13px;
     font-weight: bold;
+    min-width: auto !important;
 }
 
 .itemHeader:hover, .activeItemHeader {

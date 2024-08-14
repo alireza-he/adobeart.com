@@ -65,10 +65,13 @@ const Layout = ({children}) => {
         <>
             {
                 router.pathname !== "/Login" &&
-                <Header/>
+                <>
+                    <Header/>
+
+                    <BannerTop src={bannerImage}/>
+                </>
             }
 
-            <BannerTop src={bannerImage}/>
 
             <main className={styles.mainWrapper}>
                 <div style={{width: "100%", margin: "auto", padding: "0 !important"}}>

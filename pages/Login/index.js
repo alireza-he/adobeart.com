@@ -4,7 +4,8 @@ import LoginForm from "@/components/Auth/Login";
 import RegisterForm from "@/components/Auth/Register";
 import LogoSite from "@/components/Header/LogoSite";
 import Typography from "@mui/material/Typography";
-import styles from "./Login.module.css"
+import classNames from "classnames";
+import styles from "./Login.module.css";
 
 const Login = () => {
     const [Login, setLogin] = useState(true);
@@ -29,8 +30,8 @@ const Login = () => {
     };
 
     return (
-        <div className={"container"}>
-            <div className={styles.wrapperLoginPage}>
+        <div className={classNames(styles.wrapper, "container")}>
+            <div className={styles.boxLogin}>
                 <LogoSite/>
 
                 {

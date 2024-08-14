@@ -1,15 +1,45 @@
-.wrapperLoginPage {
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.boxLogin {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #F0F0F0;
     max-width: 50%;
+    width: 100%;
     margin: auto;
-    padding: 4rem 1rem;
+    padding: 4rem;
     border-radius: 1rem;
 }
 
 .text {
     margin: 1.5rem 0 !important;
 }
+
+@media (max-width: 1024px) {
+    .boxLogin {
+        max-width: 100%;
+        padding: 4rem 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .boxLogin {
+        max-width: 100%;
+        padding: 4rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .boxLogin {
+        max-width: 100%;
+        padding: 4rem 0;
+    }
+}
+
