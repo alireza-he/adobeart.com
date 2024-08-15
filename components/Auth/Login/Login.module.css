@@ -64,6 +64,7 @@
 .unRegisterText {
     display: flex;
     justify-content: center;
+    align-items: start;
     color: #979797;
 }
 
@@ -71,4 +72,5 @@
     color: #000 !important;
     padding: 0 .5rem;
     font-weight: bold;
+    text-wrap: nowrap;
 }

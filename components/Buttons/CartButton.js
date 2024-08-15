@@ -10,11 +10,12 @@ const CartButton = () => {
             right: 11,
             top: 21,
             border: `2px solid ${theme.palette.background.paper}`,
-            width:"20px",
-            height:"20px",
+            width: "20px",
+            height: "20px",
             display: "flex",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            background: "#000"
         },
     }));
 

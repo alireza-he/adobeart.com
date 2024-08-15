@@ -22,6 +22,8 @@
 
 .buttonsPart {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menuSide {
@@ -55,7 +57,7 @@
         flex-wrap: wrap;
     }
 
-    .buttonsPart, .menuSide{
+    .buttonsPart, .menuSide {
         display: none;
     }
 }

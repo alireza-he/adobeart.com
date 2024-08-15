@@ -4,7 +4,7 @@ import {useDesktop, useMobile} from "../Demensions";
 import HeaderMenu from "./HeaderMenu";
 import UserButton from "../Buttons/UserButton";
 import CartButton from "../Buttons/CartButton";
-import AllLanguagesButton from "../Buttons/AllLanguagesButton/AllLanguagesButton";
+import AllLanguagesButton from "../Buttons/AllLanguagesButton";
 import SearchButton from "../Buttons/SearchButton";
 import HeaderResponsiveMenu from "../Header/HeaderResponsiveMenu";
 import AppBar from '@mui/material/AppBar';

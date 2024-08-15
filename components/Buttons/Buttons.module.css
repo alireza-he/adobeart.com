@@ -11,3 +11,27 @@
     stroke: #d90b0b;
     transition: .5s;
 }
+
+/*  All Languages Button codes  */
+
+.wrapperBoxAllLanguages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F0F0F0;
+    width: 6rem;
+    padding: 0 1rem;
+}
+
+.itemWrapperBox{
+    color: #979797;
+    font-size: 14px;
+}
+
+.btnAllLang{
+    background: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    min-width: auto !important;
+}

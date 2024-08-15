@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./SocialMediaIcons.module.css";
-import {useRouter} from "next/router";
 
-const SocialMediaIcons = ({socialMediaIconsData}) => {
-    const router = useRouter();
+const SocialMediaIcons = ({socialMediaIconsData, action}) => {
+    const [show, setShow] = useState(false);
 
+    useEffect(() => {
+        setShow(action)
+    })
     return (
         <div className={styles.socialMediaWrapper}>
             {
@@ -23,8 +25,8 @@ const SocialMediaIcons = ({socialMediaIconsData}) => {
                                 />
                             </div>
                             {
-                                router.pathname === "/About" &&
-                                <span>{s.alt}</span>
+                                show &&
+                                <span className={styles.name}>{s.alt}</span>
                             }
                         </Link>
                         {

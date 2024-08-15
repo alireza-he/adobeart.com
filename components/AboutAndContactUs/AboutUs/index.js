@@ -56,7 +56,10 @@ const AboutUs = ({data = {}}) => {
             />
 
             <div style={{margin: "3rem"}} className={styles.parentSocialMediaIcons}>
-                <SocialMediaIcons socialMediaIconsData={socialMediaIconsData}/>
+                <SocialMediaIcons
+                    socialMediaIconsData={socialMediaIconsData}
+                    action={true}
+                />
             </div>
 
             {/*<ContactUs/>*/}

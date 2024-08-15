@@ -25,21 +25,21 @@
 @media (max-width: 1024px) {
     .boxLogin {
         max-width: 100%;
-        padding: 4rem 1rem;
+        padding: 4rem 3rem;
     }
 }
 
 @media (max-width: 992px) {
     .boxLogin {
         max-width: 100%;
-        padding: 4rem 1rem;
+        padding: 4rem 3rem;
     }
 }
 
 @media (max-width: 480px) {
     .boxLogin {
         max-width: 100%;
-        padding: 4rem 0;
+        padding: 4rem 1rem;
     }
 }
 
