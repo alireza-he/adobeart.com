@@ -49,16 +49,19 @@ const AboutUs = ({data = {}}) => {
 `
 
     return (
-        <div className={"container"} style={{margin: "1.5rem auto"}}>
+        <div className={"container"} style={{margin: "3rem auto"}}>
             <TitleAndDescription
                 title={"درباره ما"}
                 text={textAboutUs}
             />
 
-            <div style={{margin: "3rem"}} className={styles.parentSocialMediaIcons}>
+            <div className={styles.parentSocialMediaIcons}>
                 <SocialMediaIcons
                     socialMediaIconsData={socialMediaIconsData}
                     action={true}
+                    iconContainerStyles={{margin: "0 1rem"}}
+                    bgIconStyles={{padding: "0", width: "3rem", height: "3rem", borderRadius: ".5rem"}}
+                    iconStyles={{width: "1.75rem", height: "1.75rem"}}
                 />
             </div>
 

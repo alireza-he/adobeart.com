@@ -1,10 +1,11 @@
 import React from 'react';
+import BlogPage from "@/components/BlogPage";
 
 const Blog = () => {
     return (
-        <h1>
-            this is blog page
-        </h1>
+        <div className={"container mt_3rem"}>
+            <BlogPage/>
+        </div>
     );
 };
 

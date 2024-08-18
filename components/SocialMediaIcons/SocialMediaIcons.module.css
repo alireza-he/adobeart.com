@@ -8,6 +8,11 @@
     margin: 0 auto 1.5rem auto;
 }
 
+.socialMediaWrapper .iconContainer {
+    display: flex;
+    align-items: center;
+}
+
 .socialMediaWrapper a {
     margin: 0 .25rem;
 }
@@ -18,47 +23,45 @@
     align-items: center;
 }
 
-.BgIcon {
+.bgIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #999999;
     padding: .35rem;
     border-radius: .4rem;
     transition: background .5s linear;
 }
 
-.BgIcon:nth-of-type(1):hover {
-    transition: background 1s linear;
+.iconContainer:nth-child(1) .bgIcon:hover {
     background: linear-gradient(to bottom, #7DB424, #49BDCA, #0F68A0);
 }
 
-.BgIcon:nth-of-type(2):hover {
-    background: #29A9EC;
+.iconContainer:nth-child(2) .bgIcon:hover {
+    background-color: #29A9EC;
 }
 
-.BgIcon:nth-of-type(3):hover {
+.iconContainer:nth-child(3) .bgIcon:hover {
     background: #F14236;
 }
 
-.BgIcon:nth-of-type(4):hover {
+.iconContainer:nth-child(4) .bgIcon:hover {
     background: #FF0000;
 }
 
-.BgIcon:nth-of-type(5):hover {
+.iconContainer:nth-child(5) .bgIcon:hover {
     background: linear-gradient(to bottom, #7B38AC, #F70207, #F5D800);
 }
 
-.BgIcon:nth-of-type(6):hover {
+.iconContainer:nth-child(6) .bgIcon:hover {
     background: #007EBB;
 }
 
-.BgIcon:nth-of-type(7):hover {
+.iconContainer:nth-child(7) .bgIcon:hover {
     background: #CC2127;
 }
 
-.parentIcon span {
-    color: #999999;
-}
-
-.icon {
+.bgIcon img {
     width: 1rem;
     height: 1rem;
 }
@@ -70,8 +73,9 @@
     margin: 0 4px;
 }
 
-.name{
-    font-size: 12px;
+.name {
+    font-size: 10px;
     margin-top: 1rem;
+    color: #999999;
 }
 

@@ -1,0 +1,32 @@
+.wrapperItems {
+    margin-bottom: 3rem;
+}
+
+.parentItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemDiv {
+    width: 100%;
+    background: #F0F0F0 !important;
+    display: flex;
+    border-radius: 1rem !important;
+}
+
+.itemDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .5s;
+    transform: translateY(-5px);
+}
+
+.nameTraining {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #979797;
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
+}

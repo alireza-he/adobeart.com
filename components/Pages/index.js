@@ -108,8 +108,12 @@ const PagesBox = () => {
                         <Link
                             href={item.link}
                             key={index}
-                            className={`${styles.item} ${styles['item-' + (index + 1)]} ${index === activeIndex ? styles['item-' + (index + 1) + '-active'] : ''}`}
-
+                            className={`
+                                ${styles.item} 
+                                    ${styles['item-' + (index + 1)]} ${index === activeIndex ?
+                                    styles['item-' + (index + 1) + '-active']
+                                    : ''
+                            }`}
                         >
                             <Image
                                 src={item.src}

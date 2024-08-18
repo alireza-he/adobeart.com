@@ -1,0 +1,35 @@
+.containerBox {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 1px 0 1px #00000020;
+}
+
+.containerBox:hover {
+    box-shadow: 0 1px 1rem 1px #00000020;
+    transition: .5s;
+    transform: translateY(-5px);
+}
+
+.bottomContainerBox {
+    padding: 1rem 1.5rem;
+}
+
+.footerBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.avatarAndName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date {
+
+}

@@ -1,12 +1,15 @@
 import React from 'react';
 import Pages from "/components/Pages";
+import EducationPages from "@/components/EducationPage";
 
 const Education = () => {
     return (
         <>
             <Pages/>
 
-            <h1>این صفحه Education هستش</h1>
+            <div style={{marginTop: "3rem"}}>
+                <EducationPages/>
+            </div>
         </>
     );
 };

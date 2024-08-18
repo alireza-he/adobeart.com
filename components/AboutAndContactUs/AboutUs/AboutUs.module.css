@@ -13,7 +13,6 @@
     text-align: justify;
 }
 
-.parentSocialMediaIcons img {
-    width: 2rem !important;
-    height: 2rem !important;
+.parentSocialMediaIcons {
+    margin: 3rem;
 }

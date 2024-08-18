@@ -17,6 +17,9 @@ const Layout = ({children}) => {
             case '/Orders':
                 setBannerImage('/assets/banners/Orders.jpg');
                 break;
+            case '/Blog':
+                setBannerImage('/assets/banners/Blog.jpg');
+                break;
             case '/About':
                 setBannerImage('/assets/banners/About.jpg');
                 break;
