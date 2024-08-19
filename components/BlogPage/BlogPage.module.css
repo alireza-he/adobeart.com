@@ -18,18 +18,42 @@
     padding: 1rem 1.5rem;
 }
 
+.title_BCB {
+
+}
+
 .footerBox {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    margin-top: 3rem;
 }
 
 .avatarAndName {
     display: flex;
     align-items: center;
+    width: 50%;
+}
+
+.avatarBox {
+    width: 2rem !important;
+    height: 2rem !important;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.date {
+.dateBox {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
 
+.dateBox svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.dateBox caption, .avatarAndName caption {
+    margin: 0 .5rem;
+    color: #A8A8A8;
 }

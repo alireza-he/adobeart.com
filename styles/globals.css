@@ -76,8 +76,9 @@ button .slick-arrow {
     margin-top: 1.5rem !important;
 }
 
-.mt_3rem {
+.mx_3rem {
     margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
 }
 
 @media (max-width: 1024px) {

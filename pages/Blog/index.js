@@ -3,7 +3,7 @@ import BlogPage from "@/components/BlogPage";
 
 const Blog = () => {
     return (
-        <div className={"container mt_3rem"}>
+        <div className={"container mx_3rem"}>
             <BlogPage/>
         </div>
     );
