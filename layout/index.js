@@ -71,7 +71,10 @@ const Layout = ({children}) => {
                 <>
                     <Header/>
 
-                    <BannerTop src={bannerImage}/>
+                    {
+                        router.pathname !== "/Portfolio" &&
+                        <BannerTop src={bannerImage}/>
+                    }
                 </>
             }
 
