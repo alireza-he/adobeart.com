@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: none !important;
+    border-bottom: 1px solid #00000020;
 }
 
 .toolbar {

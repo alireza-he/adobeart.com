@@ -1,5 +1,5 @@
 .wrapper {
-    margin-top: 4.25rem;
+    margin-top: 6.5rem;
 }
 
 .portfolioBox {
@@ -18,7 +18,32 @@
 }
 
 .imgBox:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
     transition: .5s;
     transform: translateY(-5px);
+}
+
+.cardInformation {
+    display: none;
+    transition: .5s;
+    width: 100%;
+}
+
+.imgBox:hover .cardInformation {
+    display: flex;
+    align-items: end;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000050;
+    transition: .5s;
+    color: #fff !important;
+}
+
+.cardInformationFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

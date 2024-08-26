@@ -8,7 +8,7 @@ import styles from './PortfolioPage.module.css';
 const data = [
     {
         id: 1,
-        src: '/assets/latestProducts/latestProducts-01.jpg',
+        src: '/assets/PortfolioPictures/portfolio_01.jpg',
         name: 'عکاسی منظره',
         category: 'تصویر',
         tags: ['اشتراک', 'پربازدیدتر'],
@@ -16,7 +16,7 @@ const data = [
     },
     {
         id: 2,
-        src: '/assets/latestProducts/latestProducts-02.jpg',
+        src: '/assets/PortfolioPictures/portfolio_02.jpg',
         name: 'پرتره حرفه‌ای',
         category: 'تصویر',
         tags: ['اشتراک', 'جدیدتر'],
@@ -24,7 +24,7 @@ const data = [
     },
     {
         id: 3,
-        src: '/assets/latestProducts/latestProducts-03.jpg',
+        src: '/assets/PortfolioPictures/portfolio_03.jpg',
         name: 'عکاسی ماکرو',
         category: 'تصویر',
         tags: ['اشتراک', 'قدیمی تر'],
@@ -32,7 +32,7 @@ const data = [
     },
     {
         id: 4,
-        src: '/assets/latestProducts/latestProducts-04.jpg',
+        src: '/assets/PortfolioPictures/portfolio_04.jpg',
         name: 'فتوشاپ پیشرفته',
         category: 'تصویر',
         tags: ['رایگان', 'پربازدیدتر'],
@@ -40,7 +40,7 @@ const data = [
     },
     {
         id: 5,
-        src: '/assets/latestProducts/latestProducts-05.jpg',
+        src: '/assets/PortfolioPictures/portfolio_05.jpg',
         name: 'تدوین عکس',
         category: 'تصویر',
         tags: ['رایگان', 'جدیدتر'],
@@ -48,7 +48,7 @@ const data = [
     },
     {
         id: 6,
-        src: '/assets/latestProducts/latestProducts-01.jpg',
+        src: '/assets/PortfolioPictures/portfolio_06.jpg',
         name: 'عکاسی شب',
         category: 'تصویر',
         tags: ['رایگان', 'قدیمی تر'],
@@ -56,7 +56,7 @@ const data = [
     },
     {
         id: 7,
-        src: '/assets/latestProducts/latestProducts-02.jpg',
+        src: '/assets/PortfolioPictures/portfolio_07.jpg',
         name: 'فیلمبرداری تبلیغاتی',
         category: 'ویدئو',
         tags: ['رایگان', 'جدیدتر'],
@@ -64,7 +64,7 @@ const data = [
     },
     {
         id: 8,
-        src: '/assets/latestProducts/latestProducts-03.jpg',
+        src: '/assets/PortfolioPictures/portfolio_08.jpg',
         name: 'ساخت تیزر',
         category: 'ویدئو',
         tags: ['رایگان', 'جدیدتر'],
@@ -72,7 +72,7 @@ const data = [
     },
     {
         id: 9,
-        src: '/assets/latestProducts/latestProducts-04.jpg',
+        src: '/assets/PortfolioPictures/portfolio_09.jpg',
         name: 'فیلمبرداری هوایی',
         category: 'ویدئو',
         tags: ['رایگان', 'جدیدتر'],
@@ -80,7 +80,7 @@ const data = [
     },
     {
         id: 10,
-        src: '/assets/latestProducts/latestProducts-05.jpg',
+        src: '/assets/PortfolioPictures/portfolio_10.png',
         name: 'طراحی وب سایت',
         category: 'وب سایت',
         tags: ['اشتراک', 'قدیمی تر'],
@@ -88,7 +88,7 @@ const data = [
     },
     {
         id: 11,
-        src: '/assets/latestProducts/latestProducts-01.jpg',
+        src: '/assets/PortfolioPictures/portfolio_11.jpg',
         name: 'عکاسی خبری',
         category: 'تصویر',
         tags: ['اشتراک', 'پربازدیدتر'],
@@ -96,7 +96,7 @@ const data = [
     },
     {
         id: 12,
-        src: '/assets/latestProducts/latestProducts-02.jpg',
+        src: '/assets/PortfolioPictures/portfolio_12.png',
         name: 'ویرایش ویدئو',
         category: 'ویدئو',
         tags: ['رایگان', 'جدیدتر'],
@@ -104,11 +104,99 @@ const data = [
     },
     {
         id: 13,
-        src: '/assets/latestProducts/latestProducts-03.jpg',
+        src: '/assets/PortfolioPictures/portfolio_13.jpg',
         name: 'سئو وب سایت',
         category: 'وب سایت',
         tags: ['رایگان', 'قدیمی تر'],
         date: '1403/12/13'
+    },
+    {
+        id: 14,
+        src: '/assets/PortfolioPictures/portfolio_14.jpg',
+        name: 'عکاسی معماری',
+        category: 'تصویر',
+        tags: ['اشتراک', 'جدیدتر'],
+        date: '1403/12/14'
+    },
+    {
+        id: 15,
+        src: '/assets/PortfolioPictures/portfolio_15.jpg',
+        name: 'ویرایش تصویر',
+        category: 'تصویر',
+        tags: ['رایگان', 'پربازدیدتر'],
+        date: '1403/12/14'
+    },
+    {
+        id: 16,
+        src: '/assets/PortfolioPictures/portfolio_16.jpg',
+        name: 'تدوین ویدئو',
+        category: 'ویدئو',
+        tags: ['اشتراک', 'قدیمی تر'],
+        date: '1403/12/14'
+    },
+    {
+        id: 17,
+        src: '/assets/PortfolioPictures/portfolio_17.jpg',
+        name: 'طراحی لوگو',
+        category: 'وب سایت',
+        tags: ['رایگان', 'جدیدتر'],
+        date: '1403/12/14'
+    },
+    {
+        id: 18,
+        src: '/assets/PortfolioPictures/portfolio_18.jpg',
+        name: 'عکاسی خیابانی',
+        category: 'تصویر',
+        tags: ['اشتراک', 'پربازدیدتر'],
+        date: '1403/12/14'
+    },
+    {
+        id: 19,
+        src: '/assets/PortfolioPictures/portfolio_19.jpg',
+        name: 'فیلمبرداری مستند',
+        category: 'ویدئو',
+        tags: ['رایگان', 'قدیمی تر'],
+        date: '1403/12/14'
+    },
+    {
+        id: 20,
+        src: '/assets/PortfolioPictures/portfolio_20.jpg',
+        name: 'طراحی کارت ویزیت',
+        category: 'وب سایت',
+        tags: ['اشتراک', 'جدیدتر'],
+        date: '1403/12/14'
+    },
+    {
+        id: 21,
+        src: '/assets/PortfolioPictures/portfolio_21.png',
+        name: 'عکاسی صنعتی',
+        category: 'تصویر',
+        tags: ['رایگان', 'پربازدیدتر'],
+        date: '1403/12/14'
+    },
+    {
+        id: 22,
+        src: '/assets/PortfolioPictures/portfolio_22.png',
+        name: 'ویرایش صوت',
+        category: 'ویدئو',
+        tags: ['اشتراک', 'قدیمی تر'],
+        date: '1403/12/14'
+    },
+    {
+        id: 23,
+        src: '/assets/PortfolioPictures/portfolio_23.png',
+        name: 'طراحی پوستر',
+        category: 'وب سایت',
+        tags: ['رایگان', 'جدیدتر'],
+        date: '1403/12/14'
+    },
+    {
+        id: 24,
+        src: '/assets/PortfolioPictures/portfolio_24.png',
+        name: 'عکاسی هنری',
+        category: 'تصویر',
+        tags: ['اشتراک', 'پربازدیدتر'],
+        date: '1403/12/14'
     },
 ];
 
@@ -157,7 +245,7 @@ const PortfolioPage = () => {
                         <Grid item xs={12} sm={6} md={4} key={item.id}>
                             <ImageListItem className={styles.imgBox}>
                                 <img src={item.src} alt={item.name} loading="lazy"/>
-                                <Card>
+                                <Card className={styles.cardInformation}>
                                     <CardContent>
                                         <Typography variant="h5" component="h2">
                                             {item.name}
@@ -165,12 +253,14 @@ const PortfolioPage = () => {
                                         <Typography variant="body1" component="p">
                                             دسته‌بندی: {item.category}
                                         </Typography>
-                                        <Typography color="textSecondary">
-                                            {item.tags.join(', ')}
-                                        </Typography>
-                                        <Typography variant="body2" component="p">
-                                            {item.date}
-                                        </Typography>
+                                        <div className={styles.cardInformationFooter}>
+                                            <Typography>
+                                                {item.tags.join(', ')}
+                                            </Typography>
+                                            <Typography variant="body2" component="p">
+                                                {item.date}
+                                            </Typography>
+                                        </div>
                                     </CardContent>
                                 </Card>
                             </ImageListItem>

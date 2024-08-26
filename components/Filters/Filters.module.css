@@ -40,12 +40,14 @@
     box-shadow: none !important;
     border: none !important;
     transition: .5s;
+    padding: .25rem 1rem !important;
+    min-width: auto;
 }
 
-.formControlBox button:hover, .formControlBox button:hover path, .activeButton {
+.formControlBox button:hover, .formControlBox button:hover path, .activeButton, .activeButton path {
     background: #ED2224 !important;
-    color: #fff;
-    fill: #fff;
+    color: #fff !important;
+    fill: #fff !important;
     box-shadow: 0 1px 1rem 1px #00000020 !important;
 }
 

@@ -9,22 +9,22 @@ const Home = () => {
         title: "نمونه کارها",
         items: [
             {
-                src: "/assets/PortfolioPictures/portfolio_0.png", alt: "Portfolio example"
+                src: "/assets/PortfolioPictures/portfolio_10.png", alt: "Portfolio example"
             },
             {
-                src: "/assets/PortfolioPictures/portfolio_1.png", alt: "Portfolio example"
+                src: "/assets/PortfolioPictures/portfolio_12.png", alt: "Portfolio example"
             },
             {
-                src: "/assets/PortfolioPictures/portfolio_2.png", alt: "Portfolio example"
+                src: "/assets/PortfolioPictures/portfolio_21.png", alt: "Portfolio example"
             },
             {
-                src: "/assets/PortfolioPictures/portfolio_3.png", alt: "Portfolio example"
+                src: "/assets/PortfolioPictures/portfolio_22.png", alt: "Portfolio example"
             },
             {
-                src: "/assets/PortfolioPictures/portfolio_4.png", alt: "Portfolio example"
+                src: "/assets/PortfolioPictures/portfolio_23.png", alt: "Portfolio example"
             },
             {
-                src: "/assets/PortfolioPictures/portfolio_5.png", alt: "Portfolio example"
+                src: "/assets/PortfolioPictures/portfolio_24.png", alt: "Portfolio example"
             }
         ],
         moreBtnText: "مشاهده بیشتر"
