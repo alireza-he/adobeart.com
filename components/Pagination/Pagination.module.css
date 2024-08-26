@@ -1,11 +1,44 @@
-.activePage{
-
+.btnGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 3rem auto 0;
 }
 
-.afterBtn{
-
+.btnGroup button {
+    color: #979797;
+    border: none !important;
+    box-shadow: none !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    min-width: auto !important;
 }
 
-.beforeBtn{
+.afterBtn, .beforeBtn {
+    background: #F0F0F0 !important;
+}
 
+.afterBtn {
+    border-radius: 0 .5rem .5rem 0 !important;
+}
+
+.beforeBtn {
+    border-radius: .5rem 0 0 .5rem !important;
+}
+
+.btnPagesBox {
+    margin: 0 .5rem;
+}
+
+.btnPages:not(:last-child) {
+    margin-left: .5rem !important;
+}
+
+.btnPages {
+    border-radius: .5rem !important;
+}
+
+.activePage {
+    background: #F0F0F0 !important;
 }
