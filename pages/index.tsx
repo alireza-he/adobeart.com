@@ -2,7 +2,7 @@ import React from "react"
 import PortfolioBoxes from "@/components/Portfolio";
 import LatestProducts from "@/components/LatestProducts";
 import BusinessStatistics from "@/components/BusinessStatistics";
-import Pages from "@/components/Pages";
+import IconMenu from "@/components/IconMenu";
 
 const Home = () => {
     const dataPortfolioBoxes = {
@@ -29,6 +29,72 @@ const Home = () => {
         ],
         moreBtnText: "مشاهده بیشتر"
     }
+
+    const itemsLatestProducts = {
+            title: "اخرین تولیدات",
+            items: [
+                {
+                    src: '/assets/latestProducts/latestProducts-01.jpg',
+                    title: 'Latest products',
+                },
+                {
+                    src: '/assets/latestProducts/latestProducts-02.jpg',
+                    title:
+                        'Latest products',
+                }
+                ,
+                {
+                    src: '/assets/latestProducts/latestProducts-03.jpg',
+                    title: 'Latest products',
+                }
+                ,
+                {
+                    src: '/assets/latestProducts/latestProducts-04.jpg',
+                    title: 'Latest products',
+                }
+                ,
+                {
+                    src: '/assets/latestProducts/latestProducts-05.jpg',
+                    title: 'Latest products',
+                }
+                ,
+                {
+                    src: '/assets/latestProducts/latestProducts-01.jpg',
+                    title: 'Latest products',
+                }
+                ,
+                {
+                    src: '/assets/latestProducts/latestProducts-02.jpg',
+                    title: 'Latest products',
+                }
+                ,
+                {
+                    src: '/assets/latestProducts/latestProducts-04.jpg',
+                    title: 'Latest products',
+                }
+                ,
+                {
+                    src: '/assets/latestProducts/latestProducts-03.jpg',
+                    title: 'Latest products',
+                }
+                ,
+                {
+                    src: '/assets/latestProducts/latestProducts-03.jpg',
+                    title: 'Latest products',
+                }
+                ,
+                {
+                    src: '/assets/latestProducts/latestProducts-03.jpg',
+                    title: 'Latest products',
+                }
+                ,
+                {
+                    src: '/assets/latestProducts/latestProducts-03.jpg',
+                    title: 'Latest products',
+                }
+                ,
+            ]
+        };
 
     const itemsProducts = {
         title: "مشتریان ما",
@@ -60,43 +126,43 @@ const Home = () => {
             {
                 src: "/assets/teamMembers/mojtabaPhoto.png",
                 alt: "Designer",
-                fullName:"مجتبی ولی زاده",
-                profession:"طراح و گرافیست"
+                fullName: "مجتبی ولی زاده",
+                profession: "طراح و گرافیست"
             },
             {
                 src: "/assets/teamMembers/sedMojtabaPhoto.png",
                 alt: "Content production",
-                fullName:"سید مجتبی قریشی",
-                profession:"تولید محتوا"
+                fullName: "سید مجتبی قریشی",
+                profession: "تولید محتوا"
             },
             {
                 src: "/assets/teamMembers/heidariPhoto.png",
                 alt: "site designer",
-                fullName:"رضا حیدری",
-                profession:"طراح سایت"
+                fullName: "رضا حیدری",
+                profession: "طراح سایت"
             },
             {
                 src: "/assets/teamMembers/naijPhoto.png",
                 alt: "Designer",
-                fullName:"مهدی نائیج",
-                profession:"طراح و گرافیست"
+                fullName: "مهدی نائیج",
+                profession: "طراح و گرافیست"
             },
             {
                 src: "/assets/teamMembers/soheilPhoto.png",
                 alt: "Motion graphics",
-                fullName:"سهیل اشکریز",
-                profession:"موشن گرافیک"
+                fullName: "سهیل اشکریز",
+                profession: "موشن گرافیک"
             }
         ]
     }
 
     return (
         <>
-            <Pages/>
+            <IconMenu/>
 
             <PortfolioBoxes data={dataPortfolioBoxes}/>
 
-            <LatestProducts/>
+            <LatestProducts data={itemsLatestProducts}/>
 
             <PortfolioBoxes data={itemsProducts}/>
 

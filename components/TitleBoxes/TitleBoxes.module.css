@@ -1,0 +1,8 @@
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem auto !important;
+    color: #BDBDBD;
+    font-weight: 500 !important;
+    font-size: 1.375rem;
+}

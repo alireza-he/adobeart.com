@@ -1,6 +1,6 @@
 import React from 'react';
 import BannerTop from "/components/BannerTop";
-import Pages from "/components/Pages";
+import Pages from "/components/IconMenu";
 
 const AiPage = () => {
     return (

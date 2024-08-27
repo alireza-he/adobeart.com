@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import PagesBox from "@/components/Pages";
+import PagesBox from "@/components/IconMenu";
 
 const Pages = () => {
     const [page, setPage] = useState(true);

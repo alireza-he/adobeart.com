@@ -1,5 +1,5 @@
 import React from 'react';
-import Pages from "/components/Pages";
+import Pages from "/components/IconMenu";
 import EducationPages from "@/components/EducationPage";
 
 const Education = () => {
