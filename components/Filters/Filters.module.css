@@ -36,12 +36,13 @@
     justify-content: center;
     background: #F0F0F0;
     color: #979797;
-    border-radius: .5rem;
+    border-radius: .25rem;
     box-shadow: none !important;
     border: none !important;
     transition: .5s;
-    padding: .25rem 1rem !important;
-    min-width: auto;
+    padding: 0 !important;
+    width: 5rem;
+    height: 2rem;
 }
 
 .formControlBox button:hover, .formControlBox button:hover path, .activeButton, .activeButton path {
@@ -59,8 +60,15 @@
 .formControlSelectSearchBox {
     background: #F0F0F0;
     color: #979797;
-    border-left: 1px solid #000000 !important;
-    border-radius: 0 .5rem .5rem 0;
+    border-radius: .25rem;
+}
+
+.formControlSelectSearchBox > div > div {
+    padding: 0 .5rem !important;
+    width: 5rem;
+    height: 2rem !important;
+    display: flex;
+    align-items: center;
 }
 
 .formControlSelectSearchBox fieldset, .SearchBox fieldset {
@@ -71,16 +79,16 @@
 .SearchBox {
     background: #F0F0F0;
     color: #979797;
-    border-radius: .5rem 0 0 .5rem !important;
+    border-radius: .25rem !important;
 }
 
 .formControlSearchBox div[tabindex="0"], .SearchBox input {
-    min-width: 64px !important;
+    min-width: 4rem !important;
     padding: 5px 15px !important;
 }
 
 .iconFree, .iconSubscription {
-    margin-right: .5rem;
+    margin-right: .25rem;
 }
 
 [dir="left"].iconFree, [dir="left"].iconSubscription {
