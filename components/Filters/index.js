@@ -117,28 +117,60 @@ const Filters = ({onFilterChange, onSearchChange}) => {
                             </Grid>
                         ))}
 
-                        <Grid item>
-                            <FormControl variant="outlined" fullWidth className={styles.formControlSelectSearchBox}>
-                                <Select
-                                    value={filters.subcategory}
-                                    onChange={handleSubcategoryChange}
-                                    displayEmpty
-                                >
-                                    <MenuItem value=""><em>زیرمجموعه‌ها</em></MenuItem>
-                                    {
-                                        filters.category &&
-                                        subcategories[filters.category] &&
-                                        subcategories[filters.category].map((subcategory) => (
-                                            <MenuItem key={subcategory} value={subcategory}>
-                                                {subcategory}
-                                            </MenuItem>
-                                        ))}
-                                </Select>
-                            </FormControl>
-                        </Grid>
+                        {/*<Grid item>*/}
+                        {/*    <FormControl variant="outlined" fullWidth className={styles.formControlSelectSearchBox}>*/}
+                        {/*        <Select*/}
+                        {/*            value={filters.subcategory}*/}
+                        {/*            onChange={handleSubcategoryChange}*/}
+                        {/*            displayEmpty*/}
+                        {/*        >*/}
+                        {/*            <MenuItem value=""><em>زیرمجموعه‌ها</em></MenuItem>*/}
+                        {/*            {*/}
+                        {/*                filters.category &&*/}
+                        {/*                subcategories[filters.category] &&*/}
+                        {/*                subcategories[filters.category].map((subcategory) => (*/}
+                        {/*                    <MenuItem key={subcategory} value={subcategory}>*/}
+                        {/*                        {subcategory}*/}
+                        {/*                    </MenuItem>*/}
+                        {/*                ))}*/}
+                        {/*        </Select>*/}
+                        {/*    </FormControl>*/}
+                        {/*</Grid>*/}
                     </Grid>
                 </FormControl>
             </div>
+
+
+            <FormControl component="fieldset" className={styles.formControlSearchBox}>
+                <Grid container spacing={1}>
+                    <Grid item>
+                        <FormControl variant="outlined" fullWidth className={styles.formControlSelectSearchBox}>
+                            <Select
+                                value={search.category}
+                                onChange={handleSearchCategoryChange}
+                                displayEmpty
+                            >
+                                <MenuItem value=""><em>همه</em></MenuItem>
+                                {['تصویر', 'ویدئو', 'وب سایت'].map((category) => (
+                                    <MenuItem key={category} value={category}>
+                                        {category}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
+                    </Grid>
+                    <Grid item>
+                        <TextField
+                            placeholder="جستجو"
+                            variant="outlined"
+                            value={search.term}
+                            onChange={handleSearchChange}
+                            fullWidth
+                            className={styles.SearchBox}
+                        />
+                    </Grid>
+                </Grid>
+            </FormControl>
 
             <FormControl component="fieldset" className={styles.formControlBox}>
                 <Grid container spacing={1}>
@@ -153,37 +185,6 @@ const Filters = ({onFilterChange, onSearchChange}) => {
                             </Button>
                         </Grid>
                     ))}
-                </Grid>
-            </FormControl>
-
-            <FormControl component="fieldset" className={styles.formControlSearchBox}>
-                <Grid container>
-                    {/*<Grid item>*/}
-                    {/*    <FormControl variant="outlined" fullWidth className={styles.formControlSelectSearchBox}>*/}
-                    {/*        <Select*/}
-                    {/*            value={search.category}*/}
-                    {/*            onChange={handleSearchCategoryChange}*/}
-                    {/*            displayEmpty*/}
-                    {/*        >*/}
-                    {/*            <MenuItem value=""><em>همه</em></MenuItem>*/}
-                    {/*            {['تصویر', 'ویدئو', 'وب سایت'].map((category) => (*/}
-                    {/*                <MenuItem key={category} value={category}>*/}
-                    {/*                    {category}*/}
-                    {/*                </MenuItem>*/}
-                    {/*            ))}*/}
-                    {/*        </Select>*/}
-                    {/*    </FormControl>*/}
-                    {/*</Grid>*/}
-                    <Grid item>
-                        <TextField
-                            placeholder="جستجو"
-                            variant="outlined"
-                            value={search.term}
-                            onChange={handleSearchChange}
-                            fullWidth
-                            className={styles.SearchBox}
-                        />
-                    </Grid>
                 </Grid>
             </FormControl>
 

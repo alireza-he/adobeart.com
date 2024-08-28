@@ -65,10 +65,16 @@
 
 .formControlSelectSearchBox > div > div {
     padding: 0 .5rem !important;
-    width: 5rem;
-    height: 2rem !important;
+    width: 7rem;
     display: flex;
     align-items: center;
+}
+
+.formControlSelectSearchBox div {
+    font-family: Peyda, sans-serif !important;
+    color: #979797 !important;
+    font-size: 14px !important;
+    height: 2rem;
 }
 
 .formControlSelectSearchBox fieldset, .SearchBox fieldset {

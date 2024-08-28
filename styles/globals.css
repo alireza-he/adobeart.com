@@ -85,6 +85,11 @@ button .slick-arrow {
     margin-bottom: 3rem !important;
 }
 
+.py_0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
 @media (max-width: 1024px) {
     p {
         line-height: 24px !important;
