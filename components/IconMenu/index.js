@@ -10,73 +10,73 @@ const IconMenu = () => {
     const items = [
         {
             link: "/Ae",
-            src: "/assets/pagesIcons/Ae.svg",
+            src: "/assets/PagesIcons/Ae.svg",
             alt: "Ae",
             backgroundColor: "#9999F9"
         },
         {
             link: "/An",
-            src: "/assets/pagesIcons/An.svg",
+            src: "/assets/PagesIcons/An.svg",
             alt: "An",
             backgroundColor: "#9999F9"
         },
         {
             link: "/Pr",
-            src: "/assets/pagesIcons/Pr.svg",
+            src: "/assets/PagesIcons/Pr.svg",
             alt: "Pr",
             backgroundColor: "#9999F9"
         },
         {
             link: "/Lr",
-            src: "/assets/pagesIcons/Lr.svg",
+            src: "/assets/PagesIcons/Lr.svg",
             alt: "Lr",
             backgroundColor: "#55A5F9"
         },
         {
             link: "/Ps",
-            src: "/assets/pagesIcons/Ps.svg",
+            src: "/assets/PagesIcons/Ps.svg",
             alt: "Ps",
             backgroundColor: "#31A8FE"
         },
         {
             link: "/Fr",
-            src: "/assets/pagesIcons/Fr.svg",
+            src: "/assets/PagesIcons/Fr.svg",
             alt: "Fr",
             backgroundColor: "#55A5F9"
         },
         {
             link: "/Sa",
-            src: "/assets/pagesIcons/Sa.svg",
+            src: "/assets/PagesIcons/Sa.svg",
             alt: "Sa",
             backgroundColor: "#AAE559"
         },
         {
             link: "/Dn",
-            src: "/assets/pagesIcons/Dn.svg",
+            src: "/assets/PagesIcons/Dn.svg",
             alt: "Dn",
             backgroundColor: "#AAE559"
         },
         {
             link: "/Xd",
-            src: "/assets/pagesIcons/Xd.svg",
+            src: "/assets/PagesIcons/Xd.svg",
             alt: "Xd",
             backgroundColor: "#FF2BC2"
         },
         {
             link: "/Dw",
-            src: "/assets/pagesIcons/Dw.svg",
+            src: "/assets/PagesIcons/Dw.svg",
             alt: "Dw",
             backgroundColor: "#EE6FF0"
         },
         {
             link: "/Id",
-            src: "/assets/pagesIcons/Id.svg",
+            src: "/assets/PagesIcons/Id.svg",
             alt: "Id",
             backgroundColor: "#EC4E68"
         },
         {
             link: "/Ai",
-            src: "/assets/pagesIcons/Ai.svg",
+            src: "/assets/PagesIcons/Ai.svg",
             alt: "Ai",
             backgroundColor: "#F2A032"
         },

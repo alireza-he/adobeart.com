@@ -12,55 +12,55 @@ const Layout = ({children}) => {
     useEffect(() => {
         switch (router.pathname) {
             case '/Education':
-                setBannerImage('/assets/banners/Education.jpg');
+                setBannerImage('/assets/Banners/Education.jpg');
                 break;
             case '/Orders':
-                setBannerImage('/assets/banners/Orders.jpg');
+                setBannerImage('/assets/Banners/Orders.jpg');
                 break;
             case '/Blog':
-                setBannerImage('/assets/banners/Blog.jpg');
+                setBannerImage('/assets/Banners/Blog.jpg');
                 break;
             case '/About':
-                setBannerImage('/assets/banners/About.jpg');
+                setBannerImage('/assets/Banners/About.jpg');
                 break;
             case '/Ae':
-                setBannerImage('/assets/banners/Ae.jpg');
+                setBannerImage('/assets/Banners/Ae.jpg');
                 break;
             case '/An':
-                setBannerImage('/assets/banners/An.jpg');
+                setBannerImage('/assets/Banners/An.jpg');
                 break;
             case '/Pr':
-                setBannerImage('/assets/banners/Pr.jpg');
+                setBannerImage('/assets/Banners/Pr.jpg');
                 break;
             case '/Lr':
-                setBannerImage('/assets/banners/Lr.jpg');
+                setBannerImage('/assets/Banners/Lr.jpg');
                 break;
             case '/Ps':
-                setBannerImage('/assets/banners/Ps.jpg');
+                setBannerImage('/assets/Banners/Ps.jpg');
                 break;
             case '/Fr':
-                setBannerImage('/assets/banners/Fr.jpg');
+                setBannerImage('/assets/Banners/Fr.jpg');
                 break;
             case '/Sa':
-                setBannerImage('/assets/banners/Sa.jpg');
+                setBannerImage('/assets/Banners/Sa.jpg');
                 break;
             case '/Dn':
-                setBannerImage('/assets/banners/Dn.jpg');
+                setBannerImage('/assets/Banners/Dn.jpg');
                 break;
             case '/Xd':
-                setBannerImage('/assets/banners/Xd.jpg');
+                setBannerImage('/assets/Banners/Xd.jpg');
                 break;
             case '/Dw':
-                setBannerImage('/assets/banners/Dw.jpg');
+                setBannerImage('/assets/Banners/Dw.jpg');
                 break;
             case '/Id':
-                setBannerImage('/assets/banners/Id.jpg');
+                setBannerImage('/assets/Banners/Id.jpg');
                 break;
             case '/Ai':
-                setBannerImage('/assets/banners/Ai.jpg');
+                setBannerImage('/assets/Banners/Ai.jpg');
                 break;
             default:
-                setBannerImage('/assets/banners/main.jpg');
+                setBannerImage('/assets/Banners/main.jpg');
         }
     }, [router.pathname]);
 

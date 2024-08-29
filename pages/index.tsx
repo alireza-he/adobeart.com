@@ -5,7 +5,7 @@ import BusinessStatistics from "@/components/BusinessStatistics";
 import IconMenu from "@/components/IconMenu";
 
 const Home = () => {
-    const dataPortfolioBoxes = {
+    const itemsPortfolio = {
         title: "نمونه کارها",
         items: [
             {
@@ -34,88 +34,109 @@ const Home = () => {
             title: "اخرین تولیدات",
             items: [
                 {
-                    src: '/assets/latestProducts/latestProducts-01.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-01.jpg',
                     title: 'Latest products',
                 },
                 {
-                    src: '/assets/latestProducts/latestProducts-02.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-02.jpg',
                     title:
                         'Latest products',
                 }
                 ,
                 {
-                    src: '/assets/latestProducts/latestProducts-03.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-03.jpg',
                     title: 'Latest products',
                 }
                 ,
                 {
-                    src: '/assets/latestProducts/latestProducts-04.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-04.jpg',
                     title: 'Latest products',
                 }
                 ,
                 {
-                    src: '/assets/latestProducts/latestProducts-05.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-05.jpg',
                     title: 'Latest products',
                 }
                 ,
                 {
-                    src: '/assets/latestProducts/latestProducts-01.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-01.jpg',
                     title: 'Latest products',
                 }
                 ,
                 {
-                    src: '/assets/latestProducts/latestProducts-02.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-02.jpg',
                     title: 'Latest products',
                 }
                 ,
                 {
-                    src: '/assets/latestProducts/latestProducts-04.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-04.jpg',
                     title: 'Latest products',
                 }
                 ,
                 {
-                    src: '/assets/latestProducts/latestProducts-03.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-03.jpg',
                     title: 'Latest products',
                 }
                 ,
                 {
-                    src: '/assets/latestProducts/latestProducts-03.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-03.jpg',
                     title: 'Latest products',
                 }
                 ,
                 {
-                    src: '/assets/latestProducts/latestProducts-03.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-03.jpg',
                     title: 'Latest products',
                 }
                 ,
                 {
-                    src: '/assets/latestProducts/latestProducts-03.jpg',
+                    src: '/assets/LatestProducts/LatestProducts-03.jpg',
                     title: 'Latest products',
                 }
                 ,
             ]
         };
 
-    const itemsProducts = {
+    const itemsOurCustomers = {
         title: "مشتریان ما",
         items: [
             {
-                src: "/assets/teamMembers/mojtabaPhoto.png", alt: "Portfolio example"
+                src: "/assets/OurCustomers/OurCustomers_01.svg", alt: "Our Customers"
             },
             {
-                src: "/assets/teamMembers/sedMojtabaPhoto.png", alt: "Portfolio example"
+                src: "/assets/OurCustomers/OurCustomers_02.svg", alt: "Our Customers"
             },
             {
-                src: "/assets/teamMembers/mojtabaPhoto.png", alt: "Portfolio example"
+                src: "/assets/OurCustomers/OurCustomers_03.svg", alt: "Our Customers"
             },
             {
-                src: "/assets/teamMembers/sedMojtabaPhoto.png", alt: "Portfolio example"
+                src: "/assets/OurCustomers/OurCustomers_04.svg", alt: "Our Customers"
             },
             {
-                src: "/assets/teamMembers/mojtabaPhoto.png", alt: "Portfolio example"
+                src: "/assets/OurCustomers/OurCustomers_05.svg", alt: "Our Customers"
             },
             {
-                src: "/assets/teamMembers/sedMojtabaPhoto.png", alt: "Portfolio example"
+                src: "/assets/OurCustomers/OurCustomers_06.svg", alt: "Our Customers"
+            },
+            {
+                src: "/assets/OurCustomers/OurCustomers_07.svg", alt: "Our Customers"
+            },
+            {
+                src: "/assets/OurCustomers/OurCustomers_08.svg", alt: "Our Customers"
+            },
+            {
+                src: "/assets/OurCustomers/OurCustomers_09.svg", alt: "Our Customers"
+            },
+            {
+                src: "/assets/OurCustomers/OurCustomers_10.svg", alt: "Our Customers"
+            },
+            {
+                src: "/assets/OurCustomers/OurCustomers_11.svg", alt: "Our Customers"
+            },
+            {
+                src: "/assets/OurCustomers/OurCustomers_12.svg", alt: "Our Customers"
+            },
+            {
+                src: "/assets/OurCustomers/OurCustomers_13.svg", alt: "Our Customers"
             }
         ]
     }
@@ -124,34 +145,52 @@ const Home = () => {
         title: "اعضای تیم",
         items: [
             {
-                src: "/assets/teamMembers/mojtabaPhoto.png",
+                src: "/assets/TeamMembers/valizade.png",
                 alt: "Designer",
                 fullName: "مجتبی ولی زاده",
                 profession: "طراح و گرافیست"
             },
             {
-                src: "/assets/teamMembers/sedMojtabaPhoto.png",
+                src: "/assets/TeamMembers/ghoreishi.png",
                 alt: "Content production",
                 fullName: "سید مجتبی قریشی",
                 profession: "تولید محتوا"
             },
             {
-                src: "/assets/teamMembers/heidariPhoto.png",
+                src: "/assets/TeamMembers/heidari.png",
                 alt: "site designer",
                 fullName: "رضا حیدری",
                 profession: "طراح سایت"
             },
             {
-                src: "/assets/teamMembers/naijPhoto.png",
+                src: "/assets/TeamMembers/naeej.png",
                 alt: "Designer",
                 fullName: "مهدی نائیج",
                 profession: "طراح و گرافیست"
             },
             {
-                src: "/assets/teamMembers/soheilPhoto.png",
+                src: "/assets/TeamMembers/rabbani.png",
                 alt: "Motion graphics",
-                fullName: "سهیل اشکریز",
-                profession: "موشن گرافیک"
+                fullName: "آرین ربانی",
+                profession: "انیماتور"
+            },
+            {
+                src: "/assets/TeamMembers/ashkrize.png",
+                alt: "Motion graphics",
+                fullName: "اسهیل اشک ریز",
+                profession: "تدوینگر"
+            },
+            {
+                src: "/assets/TeamMembers/mozafari.png",
+                alt: "Motion graphics",
+                fullName: "علی مظفری",
+                profession: "تدوینگر"
+            },
+            {
+                src: "/assets/TeamMembers/azizi.png",
+                alt: "Motion graphics",
+                fullName: "مجید عزیزی",
+                profession: "تولید محتوا"
             }
         ]
     }
@@ -160,11 +199,11 @@ const Home = () => {
         <>
             <IconMenu/>
 
-            <PortfolioBoxes data={dataPortfolioBoxes}/>
+            <PortfolioBoxes data={itemsPortfolio}/>
 
             <LatestProducts data={itemsLatestProducts}/>
 
-            <PortfolioBoxes data={itemsProducts}/>
+            <PortfolioBoxes data={itemsOurCustomers}/>
 
             <PortfolioBoxes data={itemsTeamMembers}/>
 

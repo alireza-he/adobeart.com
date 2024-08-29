@@ -10,79 +10,79 @@ import styles from "./BlogPage.module.css";
 const BlogPage = () => {
     const data = [
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
-            src: "/assets/blog/blog_Photo01.jpg",
+            src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
             writer: "مجتبی ولی زاده",
             date: "1403/12/12"
