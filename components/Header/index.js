@@ -26,9 +26,9 @@ const Header = () => {
                         <SearchButton/>
                     </div>
 
-                    {mobile &&
-                        <HeaderResponsiveMenu/>
-                    }
+                    {/*{mobile &&*/}
+                    {/*    <HeaderResponsiveMenu/>*/}
+                    {/*}*/}
                     <div className={styles.menuSide}>
                         {desktop &&
                             <HeaderMenu/>

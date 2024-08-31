@@ -1,8 +1,17 @@
 .mx_btn, .cartButton {
-    margin: 0 .5rem;
+    margin: 0 .25rem !important;
+    padding: 0 !important;
 }
 
-.mx_btn svg:hover path {
+.mx_btn:first-child {
+    margin: 0 0 0 .25rem !important;
+}
+
+[dir="rtl"].mx_btn:first-child {
+    margin: 0 .25rem 0 0 !important;
+}
+
+.mx_btn svg:hover path, .btnAllLang svg:hover path {
     fill: #d90b0b;
     transition: .5s;
 }
@@ -13,27 +22,38 @@
 }
 
 /*  All Languages Button codes  */
+.tooltipBox {
+    display: flex;
+    align-items: center;
+    border: none !important;
+    height: 1.5rem !important;
+    /*transform: translate(1082px, 41px) !important;*/
+}
 
 .wrapperBoxAllLanguages {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #F0F0F0;
     width: 6rem;
     padding: 0 1rem;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1rem !important;
 }
 
-.itemWrapperBox{
+.itemWrapperBox {
     color: #979797;
-    font-size: 14px;
+    font-size: 13px;
+    font-family: "Peyda", sans-serif !important;
 }
 
-.btnAllLang{
+.btnAllLang {
     background: transparent !important;
     outline: none !important;
     box-shadow: none !important;
     padding: 0 !important;
     min-width: auto !important;
+    margin: 0 .25rem !important;
 }
 
 /*  more button  */
@@ -50,4 +70,34 @@
     color: #fff;
     border-radius: 2.5rem;
     font-size: 14px;
+}
+
+/*  search button  */
+
+.tooltipSearchBox {
+    display: flex;
+    align-items: center;
+    border: none !important;
+    height: 1.5rem !important;
+    transform: translate(935px, 16px) !important;
+}
+
+.formControlSearchBox {
+}
+
+.formControlSearchBox fieldset {
+    border-radius: 2.5rem;
+    border: none;
+}
+
+.formControlSearchBox input {
+    padding: 0 .5rem !important;
+    max-height: 2rem;
+    height: 2rem;
+    max-width: 10rem;
+    width: 100%;
+}
+
+.SearchBox {
+
 }
