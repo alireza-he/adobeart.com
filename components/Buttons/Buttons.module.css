@@ -79,7 +79,7 @@
     align-items: center;
     border: none !important;
     height: 1.5rem !important;
-    transform: translate(935px, 16px) !important;
+    transform: translate(958px, 14px) !important;
 }
 
 .formControlSearchBox {
@@ -92,10 +92,15 @@
 
 .formControlSearchBox input {
     padding: 0 .5rem !important;
-    max-height: 2rem;
-    height: 2rem;
+    max-height: 1.5rem;
+    height: 1.5rem;
     max-width: 10rem;
     width: 100%;
+    font-size: 13px;
+}
+
+.formControlSearchBox input::placeholder {
+    font-size: 13px;
 }
 
 .SearchBox {
