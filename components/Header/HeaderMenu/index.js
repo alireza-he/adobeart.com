@@ -30,7 +30,7 @@ const HeaderMenu = () => {
         },
         {
             "title": "مجله",
-            "route":"/Blog"
+            "route":"/Blogs"
         },
         {
             "title": "درباره ما",
