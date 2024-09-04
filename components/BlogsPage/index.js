@@ -13,91 +13,91 @@ const BlogsPage = () => {
             id: 1,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
             id: 2,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "رضا حیدری",
             date: "1403/12/12"
         },
         {
             id: 3,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "مجتبی ولی",
             date: "1403/12/12"
         },
         {
             id: 4,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "رضا ولی زاده",
             date: "1403/12/12"
         },
         {
             id: 5,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "علی ولی زاده",
             date: "1403/12/12"
         },
         {
             id: 6,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "محمد ولی زاده",
             date: "1403/12/12"
         },
         {
             id: 7,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
             id: 8,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
             id: 9,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
             id: 10,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
             id: 11,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
             id: 12,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
         {
             id: 13,
             src: "/assets/Blog/blog_Photo01.jpg",
             title: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی متن و عنوان ساختگی ایپسوم",
-            writer: "مجتبی ولی زاده",
+            author: "مجتبی ولی زاده",
             date: "1403/12/12"
         },
     ]
@@ -142,8 +142,9 @@ const BlogsPage = () => {
                                             src="/static/images/avatar/1.jpg"
                                             className={styles.avatarBox}
                                         />
-                                        <Typography component={"caption"}
-                                                    variant={"caption"}>{item.writer}</Typography>
+                                        <Typography component={"caption"} variant={"caption"}>
+                                            {item.author}
+                                        </Typography>
                                     </div>
                                     <div className={styles.dateBox}>
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"

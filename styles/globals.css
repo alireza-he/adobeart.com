@@ -90,6 +90,10 @@ button .slick-arrow {
     padding-bottom: 0 !important;
 }
 
+.my_3rem {
+    margin: 3rem 0;
+}
+
 @media (max-width: 1024px) {
     p {
         line-height: 24px !important;
