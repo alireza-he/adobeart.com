@@ -35,6 +35,7 @@
 
 .imageAndNewContentRow {
     margin-bottom: 1.5rem;
+    justify-content: space-between;
 }
 
 .imageAndNewContentRow img {
@@ -43,6 +44,39 @@
     border-radius: .75rem;
 }
 
+.imageCol {
+    /*border-left: 1px solid #D9D9D9;*/
+}
+
+.betweenLinePart {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.betweenLine {
+    display: flex;
+    width: 1px;
+    height: 100%;
+    background: #D9D9D9;
+}
+
+.latestContentTitle {
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: .5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.latestContentItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.latestContentItem {
+
+}
+
+
 .text {
-    width: content-box !important;
+    display: flex;
+    text-align: justify;
 }
