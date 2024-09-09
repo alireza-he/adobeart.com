@@ -2,7 +2,7 @@
     margin-bottom: 1.5rem !important;
 }
 
-.articleInfo, .partRight_articleInfo, .avatarName_partRight_articleInfo, .date_partRight_articleInfo, .partLeft_articleInfo {
+.articleInfo, .partRight_articleInfo, .avatarName_partRight_articleInfo, .partLeft_articleInfo {
     display: flex;
     align-items: center;
 }
@@ -21,14 +21,10 @@
     margin-left: 3rem;
 }
 
-.date_partRight_articleInfo {
-
-}
-
 .partLeft_articleInfo {
 }
 
-.avatarName_partRight_articleInfo span, .date_partRight_articleInfo span, .partLeft_articleInfo span {
+.avatarName_partRight_articleInfo caption, .partLeft_articleInfo span {
     color: #A8A8A8;
     margin: 0 .5rem;
 }
@@ -41,11 +37,10 @@
 .imageAndNewContentRow img {
     width: 100%;
     height: auto;
-    border-radius: .75rem;
+    border-radius: .5rem;
 }
 
 .imageCol {
-    /*border-left: 1px solid #D9D9D9;*/
 }
 
 .betweenLinePart {
@@ -60,23 +55,8 @@
     background: #D9D9D9;
 }
 
-.latestContentTitle {
-    border-bottom: 1px solid #D9D9D9;
-    padding-bottom: .5rem !important;
-    margin-bottom: 1.5rem !important;
-}
-
-.latestContentItems {
-    display: flex;
-    flex-direction: column;
-}
-
-.latestContentItem {
-
-}
-
-
 .text {
     display: flex;
     text-align: justify;
+    margin-bottom: .5rem !important;
 }

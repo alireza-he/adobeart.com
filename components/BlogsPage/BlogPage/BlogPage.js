@@ -1,15 +1,44 @@
 import React, {useEffect, useState} from 'react';
 import {useRouter} from "next/router";
-import Typography from "@mui/material/Typography";
-import styles from "./BlogPage.module.css";
-import Avatar from "@mui/material/Avatar";
-import {Grid} from "@mui/material";
 import Image from "next/image";
+import UserAvatar from "@/components/UserAvatar";
+import TimeReadBlog from "@/components/BlogsPage/TimeReadBlog";
+import DateBlog from "@/components/BlogsPage/DateBlog";
+import NewContent from "@/components/BlogsPage/NewContent";
+import Typography from "@mui/material/Typography";
+import {Grid} from "@mui/material";
+import styles from "./BlogPage.module.css";
 
 const BlogPage = () => {
     const router = useRouter();
     const {id} = router.query;
     const [hydrated, setHydrated] = useState(false);
+    const NewContentItem = [
+        {
+            id: "1",
+            src: "/assets/latestProducts/latestProducts-01.jpg",
+            description: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی ایپسوم متن و عنوان",
+            publicationDate: "1 روز قبل"
+        },
+        {
+            id: "2",
+            src: "/assets/latestProducts/latestProducts-02.jpg",
+            description: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی ایپسوم متن و عنوان",
+            publicationDate: "2 روز قبل"
+        },
+        {
+            id: "3",
+            src: "/assets/latestProducts/latestProducts-03.jpg",
+            description: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی ایپسوم متن و عنوان",
+            publicationDate: "3 روز قبل"
+        },
+        {
+            id: "4",
+            src: "/assets/latestProducts/latestProducts-04.jpg",
+            description: "متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی ایپسوم متن و عنوان",
+            publicationDate: "4 روز قبل"
+        },
+    ]
 
     useEffect(() => {
         setHydrated(true);
@@ -31,48 +60,26 @@ const BlogPage = () => {
 
             <div className={styles.articleInfo}>
                 <div className={styles.partRight_articleInfo}>
-                    <div className={styles.avatarName_partRight_articleInfo}>
-                        <Avatar
-                            alt="Remy Sharp"
-                            src="/static/images/avatar/1.jpg"
-                            sx={{width: 32, height: 32}}
-                        />
+                    <UserAvatar
+                        classNameWrapper={styles.avatarName_partRight_articleInfo}
+                        stylesAvatar={{width: 32, height: 32}}
+                        name={"مجتبی ولی زاده"}
+                    />
 
-                        <Typography component={"span"} variant={"caption"}>
-                            مجتبی ولی زاده
-                        </Typography>
-                    </div>
-                    <div className={styles.date_partRight_articleInfo}>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M7.99967 3.99992V7.99992L10.6663 9.33325M14.6663 7.99992C14.6663 11.6818 11.6816 14.6666 7.99967 14.6666C4.31778 14.6666 1.33301 11.6818 1.33301 7.99992C1.33301 4.31802 4.31778 1.33325 7.99967 1.33325C11.6816 1.33325 14.6663 4.31802 14.6663 7.99992Z"
-                                stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-
-                        <Typography component={"span"} variant={"caption"}>
-                            1403/6/15
-                        </Typography>
-                    </div>
+                    <DateBlog date={"1403/6/15"}/>
                 </div>
 
-                <div className={styles.partLeft_articleInfo}>
-                    <Typography component={"span"} variant={"caption"}>
-                        زمان مورد نیاز برای مطالعه:20 دقیقه
-                    </Typography>
-
-                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M6.99967 6.33325V8.99992L8.66634 9.99992M6.99967 3.33325C3.87006 3.33325 1.33301 5.87031 1.33301 8.99992C1.33301 12.1295 3.87006 14.6666 6.99967 14.6666C10.1293 14.6666 12.6663 12.1295 12.6663 8.99992C12.6663 5.87031 10.1293 3.33325 6.99967 3.33325ZM6.99967 3.33325V1.33325M5.66634 1.33325H8.33301M12.5523 3.72795L11.5523 2.72795L12.0523 3.22795M1.44702 3.72795L2.44702 2.72795L1.94702 3.22795"
-                            stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
+                <TimeReadBlog
+                    classNameWrapper={styles.partLeft_articleInfo}
+                    text={"زمان مورد نیاز برای مطالعه:20 دقیقه"}
+                />
             </div>
 
             <Grid container spacing={0} className={styles.imageAndNewContentRow}>
                 <Grid item md={8} className={styles.imageCol}>
                     <Image
                         src={"/assets/latestProducts/latestProducts-01.jpg"}
-                        alt={""}
+                        alt={"blog image"}
                         width={500}
                         height={300}
                         style={{width: "100%", height: "auto"}}
@@ -82,41 +89,7 @@ const BlogPage = () => {
                     <div className={styles.betweenLine}></div>
                 </Grid>
                 <Grid item md={3}>
-                    <Typography component={"h3"} variant={"h6"} className={styles.latestContentTitle}>
-                        جدیدترین مطالب
-                    </Typography>
-                    <div className={styles.latestContentItems}>
-                        <Grid container spacing={2} className={styles.latestContentItem}>
-                            <Grid item md={3}>
-                                <Image
-                                    src={"/assets/latestProducts/latestProducts-01.jpg"}
-                                    alt={""}
-                                    width={100}
-                                    height={100}
-                                    style={{width: "72px", height: "72px"}}
-                                />
-                            </Grid>
-                            <Grid item xs={8}>
-                                <Typography component={"text"} variant={"caption"} className={styles.text}>
-                                    متن و عنوان ساختگی ایپسوم متن و عنوان ساختگی ایپسوم متن و عنوان
-                                </Typography>
-
-                                <div className={styles.date_partRight_articleInfo}>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M7.99967 3.99992V7.99992L10.6663 9.33325M14.6663 7.99992C14.6663 11.6818 11.6816 14.6666 7.99967 14.6666C4.31778 14.6666 1.33301 11.6818 1.33301 7.99992C1.33301 4.31802 4.31778 1.33325 7.99967 1.33325C11.6816 1.33325 14.6663 4.31802 14.6663 7.99992Z"
-                                            stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"/>
-                                    </svg>
-
-                                    <Typography component={"span"} variant={"caption"}>
-                                        6 روز قبل
-                                    </Typography>
-                                </div>
-                            </Grid>
-                        </Grid>
-                    </div>
+                    <NewContent NewContentItem={NewContentItem}/>
                 </Grid>
             </Grid>
 

@@ -1,0 +1,21 @@
+.latestContentTitle {
+    color: #979797;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: .5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.latestContentItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.latestContentItem {
+    margin-bottom: 1.5rem;
+}
+
+.imgLatestContentItemWrapper img {
+    width: 4.5rem !important;
+    max-width: 4.5rem;
+    height: 4.5rem !important;
+}
